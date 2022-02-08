@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local CSS | Boilerplate for developers</title>
+    <link rel="stylesheet" href="css/local/local.min.css">
+    <link rel="stylesheet" href="css/code/prism.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header flex-sb-m">
+        <h4>local.css</h4>
+        <h4><button onclick="openNav()" class="menu_button"><i class="fas fa-bars"></i></button></h4> 
+</header>
+<div class="welcome container">
+    <section class="text-center container-720">
+        <img src="img/local.svg" alt="" width="100">
+        <h1>local.css</h1>
+        <p>A Minimal, Sementic, lightweight CSS boilerplate to make instant layout for your backend localhost projects</p>
+        <div class="buttons row">
+            <a href="#Setup" class="button">Get started</a>
+        </div>
+        <br>
+        <div class="icons">
+            <a href=""><b><i class="fab fa-github"></i></b></a>
+            <a href=""><b><i class="fab fa-twitter"></i></b></a>
+            <a href=""><b><i class="fab fa-figma"></i></b></a>
+            <a href=""><b><i class="fab fa-npm"></i></b></a>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-3 sidebar">
+            <nav id="navbar">
+                <div class="flex-r-m">
+                    <div class="container navbar_links">
+                        <a href="#Introduction" class="nav-link"><i class="fas fa-info icons"></i> Introduction</a>
+                        <a href="#Setup" class="nav-link"><i class="fas fa-download icons"></i> Setup</a>
+                        <a href="#Layout" class="nav-link"><i class="fas fa-th-large icons"></i> Layout </a>
+                        <a href="#Containers" class="nav-link"><i class="fas fa-box-open icons"></i>  Containers</a>
+                        <a href="#Typography" class="nav-link"><i class="fas fa-font icons"></i> Typography</a>
+                        <a href="#Utilities" class="nav-link"><i class="fas fa-wrench icons"></i> Utilities</a>
+                        <a href="#Lists" class="nav-link"><i class="fas fa-list icons"></i> Lists</a>
+                        <a href="#Table" class="nav-link"><i class="fas fa-table icons"></i> Table</a>
+                        <a href="#Buttons" class="nav-link"><i class="fas fa-square icons"></i> Buttons</a>
+                        <a href="#Form" class="nav-link"><i class="fas fa-clipboard-list icons"></i> Form</a>
+                    </div>
+                    <div class="">
+                        <button class="close_button" onclick="closeNav()"><i class="fa fa-times"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-9">
+            <main id="" class="container">
+                <section id="Introduction">
+                    <h3>Introduction</h3>
+                    <p> Suppose you're working with any backend language/Javascript library or any other programming language on your localhost that requires Web front-end(HTML, CSS) to work with. For example : ReactJS, VueJS, AngularJS, MERN stack, MEAN stack, PHP etc.
+                    </p>
+                    <p>You usually build up backend first on your localhost and to work on it with default html without styling gives you extra work to add styles to the document.
+                    </p>
+                    <p>To get rid of default styling, you may want to use bootstrap like css frameworks, but the problem with bootstrap and other Similar CSS frameworks is that you need to write class-atributes to style the element and that adds you an extra work to do.</p>
+                    <p>Solution of this problem is to use <b>Sementic</b> CSS styling frameworks</p>
+                    <p>With local.css you don't need to style add any element of HTML to ease your work with localhost</p>
+                    <p><b>What is sementic styling?</b></p>
+                    <p>For instance, If you want to add a button like</p>
+                    <button>Button</button>
+                    <p>To generate such button, all you need to write the following default code of HTML</p>
+
+<pre class="lang-html"><code><xmp><button>Button</button></xmp>
+</code></pre>
+                    <p>and that's it! Most of the elements are styled sementic like this</p>
+                    <p>C++ is an Object Oriented Programming Language.
+                        <br> The main pillars of Object Oriented
+                        Programming are :
+                    </p>
+                    <ul>
+                        <li>Objects and Classes</li>
+                        <li>Inheritance</li>
+                        <li>Polymorphism</li>
+                        <li>Abstraction</li>
+                        <li>Encapsulation</li>
+                    </ul>
+                </section>
+    
+                <section class="main-section" id="Setup">
+                    <h3>Setup</h3>
+                    <p>
+                        Object-oriented programming – As the name
+                        suggests uses objects in programming.
+                        Object-oriented programming aims to
+                        implement real-world entities like
+                        inheritance, hiding, polymorphism,
+                        etc in programming. The main
+                        aim of OOP is to bind together the data
+                        and the functions that operate on them
+                        so that no other part of the code can
+                        access this data except that function.
+                    </p>
+<pre class="language-git"><code>npm install local.css</code></pre>
+                    <p><b>Object : </b>An Object is an identifiable
+                        entity with some characteristics and behavior.
+                        An Object is an instance of a Class. When a
+                        class is defined, no memory is allocated but
+                        when it is instantiated (i.e. an
+                        object is created) memory is allocated.
+                        <br>
+                        <b>Class : </b>The building block of C++ that
+                        leads to Object-Oriented programming is a Class.
+                        It is a user-defined data type, which holds its
+                        own data members and member functions, which can
+                        be accessed & used by creating an instance
+                        of that class. A class is like a blueprint for
+                        an object. For Example: Consider the Class
+                        of Cars. There may be many cars with different
+                        names and brand but all of them will share
+                        some common properties like all of them will
+                        have 4 wheels, Speed Limit, Mileage range etc.
+                        So here, Car is the class and wheels,
+                        speed limits, mileage are their properties.
+                    </p>
+                </section>
+    
+                <section class="main-section" id="Layout">
+                    <h3>Layout</h3>
+                    <p>Local is based on 12-grid sytem layout but you can also use flexbox <a href="#Utilities">Utilities</a> to get desired results.</p>
+                    <p>Most used grid is column 6/6</p>
+                    <p>Here are how to use local.css to plan layout for your website</p>
+                    <div class="demobox">
+                      For Column 1/11
+                      <div class="demo">
+                        <div class="row items">
+                          <div class="col-1 item-1">col-1</div>
+                          <div class="col-11 item-2">col-11</div>
+                        </div> 
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+  <div class="col-1">col-1</div>
+  <div class="col-11">col-11</div>
+</div></xmp></code></pre>
+                      </div>
+                    </div>
+
+                    <div class="demobox">
+                      For Column 2/10
+                      <div class="demo">
+                        <div class="row items">
+                          <div class="col-2 item-1">col-2</div>
+                          <div class="col-10 item-2">col-10</div>
+                        </div> 
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+  <div class="col-2">col-2</div>
+  <div class="col-10">col-10</div>
+</div></xmp></code></pre>
+                      </div>
+                    </div>
+                      
+                    
+                    <div class="demobox">
+                      For Column 3/9
+                      <div class="demo">
+                        <div class="row items">
+                          <div class="col-3 item-1">col-3</div>
+                          <div class="col-9 item-2">col-9</div>
+                        </div> 
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+  <div class="col-3">col-3</div>
+  <div class="col-9">col-9</div>
+</div></xmp></code></pre>
+                      </div>
+                    </div>
+
+                    <div class="demobox">
+                      For Column 4/8
+                      <div class="demo">
+                        <div class="row items">
+                          <div class="col-4 item-1">col-4</div>
+                          <div class="col-8 item-2">col-8</div>
+                        </div> 
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-4">col-4</div>
+<div class="col-8">col-8</div>
+</div></xmp></code></pre>
+                      </div>
+                    </div>
+
+                    <div class="demobox">
+                      For Column 5/7
+                      <div class="demo">
+                        <div class="row items">
+                          <div class="col-5 item-1">col-5</div>
+                          <div class="col-7 item-2">col-7</div>
+                        </div> 
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-5">col-5</div>
+<div class="col-7">col-7</div>
+</div></xmp></code></pre>
+                      </div>
+                    </div>
+
+                    <div class="demobox">
+                      For Column 6/6
+                      <div class="demo">
+                        <div class="row items">
+                          <div class="col-6 item-1">col-6</div>
+                          <div class="col-6 item-2">col-6</div>
+                        </div> 
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-6">col-6</div>
+<div class="col-6">col-6</div>
+</div></xmp></code></pre>
+                      </div>
+                    </div>
+
+                    <div class="demobox">
+                      For Column Full width
+                      <div class="demo">
+                        <div class="row items">
+                          <div class="col-12 item-1">col-12</div>
+                          <div class="col-12 item-1">col-12</div>
+                        </div> 
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-12">col-12</div>
+<div class="col-12">col-12</div>
+</div></xmp></code></pre>
+                      </div>
+                    </div>
+
+                </section>
+    
+                <section class="main-section" id="Containers">
+                    <h3>Containers</h3>
+                    <p>Containers are required to seprate website components. 
+                    </p>
+                    <P>You have to use class .container for div element to make it a container.</P>
+                    <p>Containers in local.css are given padding of 1.5rem which is essential to give white space between components</p>
+                    <p>There are three kinds of containers are available here : default container, container-1280, container-980</p>
+
+
+                    <p><b>Default Container</b></p>
+                    <p>It is flexible container with 100% width. It takes full-width of the parent element</p>
+                        <div class="demo">
+                            <div class="container demo-container">
+                              Default Container
+                            </div>
+                        </div>
+                        <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container">Default Container</div></xmp></code></pre>
+                        </div>
+                        <hr>
+                        <p><b>Container 1280</b></p>
+                    <p>Container 1280 is a continer with max-width of 1280px, that means if screen-size exceeds 1280px, it will maintain fixed width of 1280px.</p>
+                    <p>If screen size is less than 1280px, it will aquire full width of the screen and work like a default container</p>
+                        <div class="demo">
+                            <div class="container-1280 demo-container">
+                              Container 1280
+                            </div>
+                        </div>
+                        <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container-1280">Container 1280</div></xmp></code></pre>
+                        </div>
+                        <hr>
+                        <p><b>Container 980</b></p>
+                    <p>Container 980 is a continer with max-width of 980px, that means if screen-size exceeds 980px, it will maintain fixed width of 980px.</p>
+                    <p>If screen size is less than 980px, it will aquire full width of the screen and work like a default container</p>
+                        <div class="demo">
+                            <div class="container-980 demo-container">
+                              Container 980
+                            </div>
+                        </div>
+                        <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container-1280">Container 980</div></xmp></code></pre>
+                        </div>
+<p>Try minimizing browser's screen using <kbd>CTRL -</kbd>  up to 50% to see containers in action.</p>
+                </section>
+
+                <section class="main-section" id="Typography">
+                  <h3>Typography</h3>
+                  <p>Responsive & fluid typography is used which is fully sementic and class-less.
+                  </p>
+                  <p>You don't have to change <em>font-size</em> or <em>line-height</em> for various screens, so that you can just focus on your learnings</p>
+                  <p>Here are Typography conponents :</p>
+                  <h4>Headings</h4>
+                  <div class="demobox">
+                      <div class="demo">
+                          <h1>Heading one h1</h1>
+                          <h2>Heading two h2</h2>
+                          <h3>Heading three h3</h3>
+                          <h4>Heading four h4</h4>
+                          <h5>Heading five h5</h5>
+                          <h6>Heading six h6</h6>
+                          <p>This is a paragraph line</p>
+                      </div>
+                      
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><h1>Heading one h1</h1>
+<h2>Heading two h2</h2>
+<h3>Heading three h3</h3>
+<h4>Heading four h4</h4>
+<h5>Heading five h5</h5>
+<h6>Heading six h6</h6>
+<p>This is a paragraph line</p></xmp></code></pre>
+                      </div>
+                  </div>
+              </section>
+  
+                <section class="main-section" id="Utilities">
+                    <h3>Utilities</h3>
+    
+                    <p>
+                        
+                    </p>
+    
+                    
+                </section>
+    
+                <section class="main-section" id="Lists">
+                    <h3>Lists</h3>
+                    <p>There are three kinds of lists in HTML : ordered list, un-ordered list, defination lists 
+                    </p>
+                    <p>Here are all sementic list components</p>
+                    <p><b>1. Ordered list</b></p>
+                    <div class="demobox">
+                    <div class="demobox">
+                            <ol>
+                                <li>
+                                  List item one
+                                  <ol>
+                                    <li>Nested list item</li>
+                                  </ol>
+                                </li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                              </ol>	
+                    </div>	
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><ol>
+<li>
+  List item one
+  <ol>
+    <li>Nested list item</li>
+  </ol>
+</li>
+<li>List item two</li>
+<li>List item three</li>
+</ol></xmp></code></pre>							
+                    </div>
+                    </div>
+                    <p><b>2. Unordered list</b></p>
+                    <div class="demobox">
+                        <div class="demobox">
+                            <ul>
+                                <li>
+                                  List item one
+                                  <ul>
+                                    <li>Nested list item</li>
+                                  </ul>
+                                </li>
+                                <li>List item two</li>
+                                <li>List item three</li>
+                              </ul>	
+                        </div>	
+                        <div class="codebox">
+<pre class="lang-html"><code><xmp><ul>
+<li>
+  List item one
+  <ul>
+    <li>Nested list item</li>
+  </ul>
+</li>
+<li>List item two</li>
+<li>List item three</li>
+</ul></xmp></code></pre>							
+                        </div>
+                        </div>
+
+
+                        <p><b>3. Definition list</b></p>
+                    <div class="demobox">
+                        <div class="demobox">
+                            <dl>
+                                <dt>Definition One</dt>
+                                <dd>Definition one description</dd>
+                                <dt>Definition Two</dt>
+                                <dd>Definition two description</dd>
+                              </dl>	
+                        </div>	
+                        <div class="codebox">
+<pre class="lang-html"><code><xmp><dl>
+<dt>Definition One</dt>
+<dd>Definition one description</dd>
+<dt>Definition Two</dt>
+<dd>Definition two description</dd>
+</dl></xmp></code></pre>							
+                        </div>
+                        </div>
+                </section>
+
+                <!-- TABLES -->
+                <section class="main-section" id="Table">
+                    <h3>Table</h3>
+                    <p>Sementic and basic table syling using local.css
+                    </p>
+                    <div class="demobox">
+                        <div class="demo">
+                            <table>
+                                <thead>
+                                  <tr>
+                                    <th>Head 1</th>
+                                    <th>Head 2</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Description 1</td>
+                                    <td>Description 2</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Description 1</td>
+                                    <td>Description 2</td>
+                                  </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                      <th>Footer 1</th>
+                                      <th>Footer 2</th>
+                                    </tr>
+                                  </tfoot>
+                              </table>
+                        </div>
+                        <div class="codebox">
+<pre class="lang-html"><code><xmp><table>
+<thead>
+  <tr>
+    <th>Head 1</th>
+    <th>Head 2</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Description 1</td>
+    <td>Description 2</td>
+  </tr>
+  <tr>
+    <td>Description 1</td>
+    <td>Description 2</td>
+  </tr>
+</tbody>
+<tfoot>
+    <tr>
+      <th>Footer 1</th>
+      <th>Footer 2</th>
+    </tr>
+  </tfoot>
+</table></xmp></code></pre>								
+                        </div>
+                    </div>
+                </section>
+                <section class="main-section" id="Buttons">
+                  <h3>Buttons</h3>
+                  <p>There are three patterns of buttons given here : default, lined and round. <br> Buttons can be generated using three tags :  &lt;input&gt;,  &lt;button&gt;,  &lt;a&gt;
+                  Hence, here are all kind of buttons you can use.
+                  <p>Use lined buttons for accent/secondary buttons</p>
+                  <p><b>Using &lt;input&gt; tag:</b></p>
+
+                  <div class="demobox">
+                      <div class="demo">
+                          <input type="button" value="Button"/>
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><input type="button" value="Button"/>
+<input type="submit" value="Submit" />
+<input type="reset" value="Reset" /></xmp></code></pre>
+                      </div>
+                  </div>
+                  <p><b>Using &lt;button&gt; tag:</b></p>
+                  <div class="demobox">
+                  <div class="demo">
+                      <button>Button Element</button>
+                        <button class="button-line">Button line</button>
+                        <button class="button-round">Button round</button>
+                        <button class="button-round-line">Button round line</button>
+                  </div>
+                  <div>
+<pre class="lang-html"><code><xmp><button>Button Element</button>
+<button class="button-line">Button line</button>
+<button class="button-round">Button round</button>
+<button class="button-round-line">Button round line</button></xmp></code></pre>
+                  </div>
+                  </div>
+                  <p><b>Using &lt;a&gt;(anchor) tag:</b></p>
+
+                  <div class="demobox">
+                  <div class="demo">
+                  <a href="" class="button">Button 1</a>
+                    <hr>
+                    <a href="" class="button-line">Button 2</a>
+                    <hr>
+                    <a href="" class="button-round">Button 3</a>
+                    <hr>
+                    <a href="" class="button-round-line">Button 4</a>
+                  </div>
+              
+                  <div>
+<pre class="lang-html"><code><xmp><a href="#" class="button">Button 1</a>
+<hr>
+<a href="#" class="button-line">Button 2</a>
+<hr>
+<a href="#" class="button-round">Button 3</a>
+<hr>
+<a href="#" class="button-round-line">Button 4</a></xmp></code></pre>
+                  </div>
+                  </div>
+              </section>
+            <section class="main-section" id="Form">
+                <h3>Form</h3>
+                <p>Forms in local.css are made so simple and designed for better ease.
+                </p>
+                <p>All kinds of form input types are given with their sementic code</p>
+<!-- Text input -->
+                <div class="demobox">
+                  <div class="demo">
+                    <label for="text">Text Input</label>
+                    <input id="text" type="text" placeholder="Text Input" />
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="text">Text Input</label>
+<input id="text" type="text" placeholder="Text Input" /></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Password -->
+                  <div class="demobox">
+                  <div class="demo">
+                    <label for="password">Password</label>
+                    <input id="password" type="password" placeholder="Password" />
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="password">Password</label>
+<input id="password" type="password" placeholder="Password" /></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Url input -->
+                <div class="demobox">
+                  <div class="demo">
+                    <label for="url">URL</label>
+      <input id="url" type="url" placeholder="http://www.example.com" />
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="url">URL</label>
+<input id="url" type="url" placeholder="http://www.example.com"/></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Email -->
+                <div class="demobox">
+                  <div class="demo">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="email" placeholder="email@example.com" />
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="email">Email Address</label>
+<input id="email" type="email" placeholder="email@example.com" /></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Phone number -->
+
+                <div class="demobox">
+                  <div class="demo">
+                    <label for="phone">Phone Number</label>
+      <input id="phone" type="tel" placeholder="123-123-1234" />
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="phone">Phone Number</label>
+<input id="phone" type="tel" placeholder="123-123-1234" /></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Search -->
+
+                <div class="demobox">
+                  <div class="demo">
+                    <label for="search">Search</label>
+      <input id="search" type="search" placeholder="Search" />
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="search">Search</label>
+<input id="search" type="search" placeholder="Search" /></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Number -->
+
+                <div class="demobox">
+                  <div class="demo">
+                    <label for="number">Number</label>
+      <input id="number" type="number" placeholder="Number" />
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="number">Number</label>
+<input id="number" type="number" placeholder="Number" /></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Select -->
+                <div class="demobox">
+                  <div class="demo">
+                    <label for="select">Select</label>
+      <select id="select">
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+      </select>
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="select">Select</label>
+<select id="select">
+  <option>Option One</option>
+  <option>Option Two</option>
+  <option>Option Three</option>
+</select></xmp></code></pre>
+                  </div>
+                </div>
+<!-- Checkboxes -->
+                  <div class="demobox">
+                    <div class="demo">
+                      <label for="checkbox1">
+                        <input id="checkbox1" name="checkbox" type="checkbox" checked="checked" /> Choice
+                        A
+                      </label>
+                      <label for="checkbox2">
+                        <input id="checkbox2" name="checkbox" type="checkbox" /> Choice B
+                      </label >
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="checkbox1">
+  <input id="checkbox1" name="checkbox" type="checkbox" checked="checked" /> Choice A
+</label>
+<label for="checkbox2">
+  <input id="checkbox2" name="checkbox" type="checkbox" /> Choice B
+</label></xmp></code></pre>
+                    </div>
+                  </div>
+<!-- Radio buttons -->
+                  <div class="demobox">
+                    <div class="demo">
+                      <label for="radio1">
+                        <input id="radio1" name="radio" type="radio" class="radio" checked="checked" /> Option
+                        1</label
+                      >
+                      <label for="radio2">
+                        <input id="radio2" name="radio" type="radio" class="radio" /> Option 2</label
+                      >
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="radio1">
+  <input id="radio1" name="radio" type="radio" class="radio" checked="checked" /> Option 1
+</label>
+<label for="radio2">
+  <input id="radio2" name="radio" type="radio" class="radio" /> Option 2
+</label></xmp></code></pre>
+                    </div>
+                  </div>
+<!-- Textarea -->
+                  <div class="demobox">
+                    <div class="demo">
+                      <label for="textarea">Textarea</label>
+          <textarea id="textarea" rows="5" cols="30" placeholder="Message"></textarea>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><label for="textarea">Textarea</label>
+<textarea id="textarea" rows="5" cols="30" placeholder="Message"></textarea></xmp></code></pre>
+                    </div>
+                  </div>
+<!-- Fieldset and legend -->
+
+                  <p><b>Fieldset and legend form</b></p>
+                  <div class="demobox">
+                    <div class="demo">
+                      <form>
+                        <fieldset>
+                          <legend>Legend</legend>
+                          <label for="text">Text Input</label>
+                          <input id="text" type="text" placeholder="Text Input" />
+                        </fieldset>
+                      </form>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><form>
+  <fieldset>
+    <legend>Legend</legend>
+    <label for="text">Text Input</label>
+    <input id="text" type="text" placeholder="Text Input" />
+  </fieldset>
+</form></xmp></code></pre>
+                    </div>
+                  </div>
+<!-- Login form -->
+                  <p>Let's make a simple login form</p>
+                  <div class="demobox">
+                    <div class="demo">
+                      <form>
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="email@example.com" />
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="Password" />
+                        <input type="submit" value="Login">
+                      </form>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><form>
+  <label for="email">Email Address</label>
+  <input id="email" type="email" placeholder="email@example.com" />
+  <label for="password">Password</label>
+  <input id="password" type="password" placeholder="Password" />
+  <input type="submit" value="Login">
+</form></xmp></code></pre>
+                    </div>
+                  </div>
+            </section>
+            </main>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+<script src="js/code/prism.js"></script>
+</body>
+</html>
