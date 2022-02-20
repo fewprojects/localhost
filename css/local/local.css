@@ -275,25 +275,25 @@ tbody tr td {
 
 /*container  */
 .container {
-  padding: 1.5rem;
+  padding: 1rem;
   width: 100%;
 }
 .container-720 {
   max-width: 720px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   justify-content: center;
 }
 .container-980 {
   max-width: 980px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   justify-content: center;
 }
 .container-1280 {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 1rem;
   justify-content: center;
 }
 
