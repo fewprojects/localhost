@@ -88,8 +88,7 @@ video {
 }
 body {
   display: block;
-  font-size: calc(0.885rem + 0.5vw);
-  line-height: calc(1.66rem + 1vw);
+  font-size: calc(16px + (26- 16) * ((100vw-300px) / (1600 - 300)));
   color: #555;
 }
 
@@ -211,8 +210,7 @@ h6 {
   font-size: calc(0.8rem + 0.67vw);
 }
 p {
-  font-size: calc(0.885rem + 0.5vw);
-  line-height: calc(1.66rem + 1vw);
+  font-size: calc(16px + (26- 16) * ((100vw-300px) / (1600 - 300)));
   color: #555;
 }
 h1,
@@ -325,7 +323,7 @@ input:not(:first-child) {
 select,
 textarea {
   padding: 0.8rem 1rem;
-  font-size:inherit;
+  font-size: inherit;
   display: block;
   background-color: none;
   outline: none;
