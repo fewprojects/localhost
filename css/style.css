@@ -120,3 +120,7 @@ font-weight: bold;
 .demo-container{
   background-color: #ddd;
 }
+.welcome section .icons{
+
+  margin: 1rem 0;
+}
