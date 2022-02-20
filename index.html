@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+<link rel="manifest" href="img/favicon/site.webmanifest">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +22,7 @@
 </header>
 <div class="welcome container">
     <section class="text-center container-720">
-        <img src="img/local.svg" alt="" width="100">
+        <img src="img/local.svg" alt="local-css logo">
         <h1>local.css</h1>
         <p>A Minimal, Sementic, lightweight CSS boilerplate to make instant layout for your backend localhost projects</p>
         <div class="buttons row">
@@ -75,56 +79,22 @@
 <pre class="lang-html"><code><xmp><button>Button</button></xmp>
 </code></pre>
                     <p>and that's it! Most of the elements are styled sementic like this</p>
-                    <p>C++ is an Object Oriented Programming Language.
-                        <br> The main pillars of Object Oriented
-                        Programming are :
-                    </p>
-                    <ul>
-                        <li>Objects and Classes</li>
-                        <li>Inheritance</li>
-                        <li>Polymorphism</li>
-                        <li>Abstraction</li>
-                        <li>Encapsulation</li>
-                    </ul>
+                   
                 </section>
     
                 <section class="main-section" id="Setup">
                     <h3>Setup</h3>
-                    <p>
-                        Object-oriented programming – As the name
-                        suggests uses objects in programming.
-                        Object-oriented programming aims to
-                        implement real-world entities like
-                        inheritance, hiding, polymorphism,
-                        etc in programming. The main
-                        aim of OOP is to bind together the data
-                        and the functions that operate on them
-                        so that no other part of the code can
-                        access this data except that function.
+                    <p>You can install local css into your system via npm like this :
                     </p>
 <pre class="language-git"><code>npm install local.css</code></pre>
-                    <p><b>Object : </b>An Object is an identifiable
-                        entity with some characteristics and behavior.
-                        An Object is an instance of a Class. When a
-                        class is defined, no memory is allocated but
-                        when it is instantiated (i.e. an
-                        object is created) memory is allocated.
-                        <br>
-                        <b>Class : </b>The building block of C++ that
-                        leads to Object-Oriented programming is a Class.
-                        It is a user-defined data type, which holds its
-                        own data members and member functions, which can
-                        be accessed & used by creating an instance
-                        of that class. A class is like a blueprint for
-                        an object. For Example: Consider the Class
-                        of Cars. There may be many cars with different
-                        names and brand but all of them will share
-                        some common properties like all of them will
-                        have 4 wheels, Speed Limit, Mileage range etc.
-                        So here, Car is the class and wheels,
-                        speed limits, mileage are their properties.
-                    </p>
-                </section>
+                    <p>to implement this into your javascript project like ReactJS. import the module like this : </p>
+<pre class="language-javascript"><code>import '../node_modules/localcss/css/local.min.css'</code></pre>
+
+<p>Or</p>
+                    <p>Use the CDN and paste this following link within <code>&lt;head&gt;&lt;/head&gt;</code> tags</p>
+<pre class="language-html"><code><xmp><link rel="stylesheet" href=""></xmp></code></pre>
+                    <p>After adding local css into your practice project, you can play with your backend without worrying about styling.</p>                    
+                  </section>
     
                 <section class="main-section" id="Layout">
                     <h3>Layout</h3>
@@ -287,7 +257,19 @@
                             </div>
                         </div>
                         <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="container-1280">Container 980</div></xmp></code></pre>
+<pre class="lang-html"><code><xmp><div class="container-980">Container 980</div></xmp></code></pre>
+                        </div>
+                        <hr>
+                        <p><b>Container 720</b></p>
+                    <p>Container 720 is a continer with max-width of 720px, that means if screen-size exceeds 720px, it will maintain fixed width of 720px.</p>
+                    <p>If screen size is less than 720px, it will aquire full width of the screen and work like a default container</p>
+                        <div class="demo">
+                            <div class="container-720 demo-container">
+                              Container 720
+                            </div>
+                        </div>
+                        <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container-720">Container 720</div></xmp></code></pre>
                         </div>
 <p>Try minimizing browser's screen using <kbd>CTRL -</kbd>  up to 50% to see containers in action.</p>
                 </section>
@@ -324,11 +306,111 @@
   
                 <section class="main-section" id="Utilities">
                     <h3>Utilities</h3>
-    
-                    <p>
+                    <p>local css has some sementic and class based elements or utilities that will help you to achieve styling without wrting extra css for them </p>
+                      <h6>Text Formatting</h6>
+
+                      <!-- Bold Text -->
+                  <div class="demobox">
+                    <div class="demo">
+                      <p>
+                        This sentence is <b>bold</b>. If you like semantics, you might go with
+                              <strong>strong</strong> or <em>emphasized</em> text. If not, <i>italic</i> is still
+                              around. <small>Small</small> text is for fine print. Your copy can also be
+                              <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, <u>Underline</u>, 
+                              <del>deleted</del>, or <mark>highlighted</mark>. You would use a
+                              <a href="#!">hyperlink</a> to go to a new page.
+                            </p>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><p>
+  This sentence is <b>bold</b>.If you like semantics, 
+  you might go with<strong>strong</strong> or 
+  <em>emphasized</em> text. If not, 
+  <i>italic</i> is still around. 
+  <small>Small</small> text is for fine print. 
+  Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, 
+  <ins>inserted</ins>, <u>Underline</u>, <del>deleted</del>, or 
+  <mark>highlighted</mark>. 
+  You would use a <a href="#!">hyperlink</a> to go to a new page.
+</p></xmp></code></pre>
+                    </div>
+                  </div>
+
+                  <!-- Code  -->
+
+                  <div class="demobox">
+                    <div class="demo">
+                      <p>
+                        If you like to write about there are plenty of semantic tags for you. There's the generic
+                        <code>code</code>, as well as 
+                        <kbd>Keyboard input</kbd>, <samp>computer output</samp>, and
+                        <var>variables</var>.
+                      </p>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><p>
+  If you like to write about there are plenty of semantic tags for you. 
+  There's the generic <code>code</code>, as well as 
+  <kbd>Keyboard input</kbd>, <samp>computer output</samp>, 
+  and <var>variables</var>.
+</p></xmp></code></pre>
+                    </div>
+                  </div>
+<!-- Demobox -->
+                  <div class="demobox">
+                    <div class="demo">
+                      <p>
+                        You might have need of a <cite>citation</cite>, <q>short quotation</q>,
+                        <abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
+                      </p>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><p>
+  You might have need of a <cite>citation</cite>, <q>short quotation</q>,
+  <abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
+</p></xmp></code></pre>
+                    </div>
+                  </div>
                         
-                    </p>
-    
+                  <!-- Address -->
+                  <p>For address tag : </p>
+                  <div class="demobox">
+                    
+                    <div class="demo">
+                      <address>
+                        <p>
+                          123 Fake Street<br />
+                          Springfield, USA
+                        </p>
+                      </address>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><address>
+  <p>
+    123 Fake Street<br />
+    Springfield, USA
+  </p>
+</address></xmp></code></pre>
+                    </div>
+                  </div>
+                        
+    <h6>Blockquote</h6>
+
+    <p>To add quotes you can use blockquote tag like this : </p>
+    <div class="demobox">
+      <div class="demo">
+        <blockquote>
+          This world shall know pain!
+          <cite>- Pain from Naruto Shippuden</cite>
+        </blockquote>
+      </div>
+      <div class="codebox">
+<pre class="lang-html"><code><xmp><blockquote>
+  This world shall know pain!
+  <cite>- Pain from Naruto Shippuden</cite>
+</blockquote></xmp></code></pre>
+      </div>
+    </div>
                     
                 </section>
     

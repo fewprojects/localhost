@@ -151,13 +151,12 @@ a:hover {
   text-decoration: underline;
   transition: 100ms linear;
 }
+
 code {
   font-family: monospace;
   border-radius: 3px;
-  background-color: #ddd;
   font-size: inherit;
-  color: #121212;
-  /* padding: 0.3rem 0.5rem; */
+  color: #ec4949;
 }
 kbd {
   font-family: monospace;
@@ -165,10 +164,10 @@ kbd {
   font-size: inherit;
   color: #ddd;
   font-weight: bold;
-  background-color: #121212;
+  background-color: #333;
   font-size: 75%;
   padding: 0.3rem 0.5rem;
-  box-shadow: inset 0.2rem 0.2rem -1rem #c5c5c5;
+  box-shadow: inset 2px 3px 4px #6e6e6e;
 }
 
 samp {
@@ -177,6 +176,7 @@ samp {
   color: #121212;
   padding: 0.3rem 0.5rem;
 }
+
 pre {
   line-height: 1.66;
   color: #555555;
@@ -501,6 +501,7 @@ blockquote cite {
   display: block;
   color: #707070;
   font-style: normal;
+  font-size: 80%;
   font-weight: bold;
   margin-top: 1em;
 }
