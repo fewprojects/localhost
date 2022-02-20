@@ -91,7 +91,7 @@ html {
 }
 body {
   display: block;
-  line-height: 1.66;
+  line-height: calc(1.66 + 1vw);
   color: #555;
 }
 
@@ -359,6 +359,7 @@ button {
   -webkit-appearance: none;
   margin: 1rem 0rem;
   border: none;
+  font-size: 80%;
   text-transform: none;
   cursor: pointer;
   border: 1.5px solid var(--primary-color);
@@ -366,15 +367,14 @@ button {
   font-family: inherit;
   outline: none;
   display: inline;
-  font-weight: bold;
-  padding: 0.6rem 1.9rem;
+  font-weight: 600;
+  padding: 0.8rem 2.4rem;
 }
 
 a.button,
 a.button-line,
 a.button-round,
 a.button-round-line {
-  font-size: 75%;
   display: inline;
 }
 a.button,
