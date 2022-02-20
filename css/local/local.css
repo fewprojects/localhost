@@ -86,9 +86,11 @@ video {
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 1rem;
+}
 body {
   display: block;
-  font-size: calc(1rem + 1vw);
   line-height: 1.66;
   color: #555;
 }
