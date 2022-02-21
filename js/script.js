@@ -1,3 +1,4 @@
+
 function openNav(){
     document.getElementById("navbar").style.width="100%";
 
