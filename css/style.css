@@ -4,7 +4,7 @@
   .close_button {
     display: none;
   }
-  .header h4 {
+  .header h5 {
     display: none;
   }
   .sidebar {
@@ -116,4 +116,9 @@ a i.icons {
 }
 .welcome section .icons {
   margin: 1rem 0;
+}
+.flexbox_img {
+  width: 100%;
+  height:auto;
+  max-width: 980px;
 }

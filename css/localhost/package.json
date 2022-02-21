@@ -1,14 +1,14 @@
 {
   "name": "localhost.css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Minimal, Sementic, lightweight CSS boilerplate to make instant layout for your backend localhost projects",
-  "main": "local.css",
+  "main": "localhost.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fewprojects/localcss.git"
+    "url": "git+https://github.com/fewprojects/localhostcss.git"
   },
   "keywords": [
     "css",
@@ -18,7 +18,7 @@
   "author": "Ankit Upadhyay <ankit.upa007@gmail.com> (https://theankitnet.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fewprojects/localcss/issues"
+    "url": "https://github.com/fewprojects/localhostcss/issues"
   },
-  "homepage": "https://github.com/fewprojects/localcss#readme"
+  "homepage": "https://github.com/fewprojects/localhostcss#readme"
 }

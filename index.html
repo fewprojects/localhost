@@ -17,16 +17,16 @@
 </head>
 <body>
     <header class="header flex-sb-m">
-        <h4>Localhost.css</h4>
+        <h5>localhost.css</h5>
         <button onclick="openNav()" class="menu_button"><i class="fas fa-bars"></i></button> 
 </header>
 <div class="welcome container flex-c-m">
     <section class="text-center container-720">
         <img src="img/localhost.svg" alt="localhost-css logo">
-        <h1>Localhost.css</h1>
+        <h1>localhost.css</h1>
         <p>A Minimal, Sementic, lightweight CSS boilerplate to make instant layout for your backend localhost projects</p>
         <div class="buttons row">
-            <a data-scroll href="#Setup" class="button">Get started</a>
+            <a data-scroll href="#Introduction" class="button">Get started</a>
         </div>
         <br>
         <div class="icons">
@@ -61,6 +61,7 @@
                         <a data-scroll href="#Containers" class="nav-link">Containers</a>
                         <a data-scroll href="#Typography" class="nav-link">Typography</a>
                         <a data-scroll href="#Utilities" class="nav-link">Utilities</a>
+                        <a data-scroll href="#Flexbox" class="nav-link">Flexbox</a>
                         <a data-scroll href="#Lists" class="nav-link">Lists</a>
                         <a data-scroll href="#Table" class="nav-link">Table</a>
                         <a data-scroll href="#Buttons" class="nav-link">Buttons</a>
@@ -96,15 +97,15 @@
     
                 <section class="main-section" id="Setup">
                     <h3>Setup</h3>
-                    <p>You can install localhost css into your system via npm like this :
+                    <p>You can install localhost css into your system via these following methods 
                     </p>
-<pre class="language-git"><code>npm install localhost.css</code></pre>
+                    <p>1. via npm</p>
+<pre class="language-git"><code>npm i localhost.css</code></pre>
                     <p>to implement this into your javascript project like ReactJS. import the module like this : </p>
 <pre class="language-javascript"><code>import '../node_modules/localhostcss/css/localhost.min.css'</code></pre>
 
-<p>Or</p>
-                    <p>Use the CDN and paste this following link within <code>&lt;head&gt;&lt;/head&gt;</code> tags</p>
-<pre class="language-html"><code><xmp><link rel="stylesheet" href=""></xmp></code></pre>
+                    <p>2. Use the CDN and paste this following link within <code>&lt;head&gt;&lt;/head&gt;</code> tags</p>
+<pre class="language-html"><code><xmp><link rel="stylesheet" href="https://localhost-css.netlify.app/css/localhost/localhost.min.css"></xmp></code></pre>
                     <p>After adding localhost css into your practice project, you can play with your backend without worrying about styling.</p>                    
                   </section>
     
@@ -423,7 +424,125 @@
 </blockquote></xmp></code></pre>
       </div>
     </div>
-                    
+</section>
+
+<section class="main-section" id="Flexbox">
+    <h3>Flexbox</h3>
+    <p>In localhost css, flexbox is class-atributes based and simplified to a good extent.</p>
+    <p>Add following classes into your element to get flexbox layout</p>
+    <div class="container">
+     <table>
+       <thead>
+         <tr>
+           <th>Class</th>
+           <th>What it will do</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>.flex-l</td>
+           <td>{ display: flex; justify-content: flex-start; }</td>
+         </tr>
+         <tr>
+           <td>.flex-c</td>
+           <td>{ display: flex; justify-content: center; }</td>
+         </tr>
+         <tr>
+           <td>.flex-r</td>
+           <td>{ display: flex; justify-content: flex-end; }</td>
+         </tr>
+         <tr>
+           <td>.flex-t</td>
+           <td>{ display: flex; align-items: flex-start; }</td>
+         </tr>
+         <tr>
+           <td>.flex-m</td>
+           <td>{ display: flex; align-items: center; }</td>
+         </tr>
+         <tr>
+           <td>.flex-b</td>
+           <td>{ display: flex; align-items: flex-end; }</td>
+         </tr>
+         <tr>
+           <td>.flex-sa</td>
+           <td>{ display: flex; justify-content: space-around; } </td>
+         </tr>
+         <tr>
+           <td>.flex-sb</td>
+           <td>{ display: flex; justify-content: space-between; } </td>
+         </tr>
+         <tr>
+           <td>.flex-str</td>
+           <td>{ display: flex; align-items: stretch; } </td>
+         </tr>
+         <tr>
+           <td>.flex-col</td>
+           <td>{ display: flex; flex-direction: column; }</td>
+         </tr>
+         <tr>
+           <td>.flex-row</td>
+           <td>{ display: flex; flex-direction: row; } </td>
+         </tr>
+         <tr>
+           <td>.flex-wrap</td>
+           <td>{ display: flex; flex-wrap: wrap; }</td>
+         </tr>
+       </tbody>
+     </table>
+    </div>
+    <p>Here is a chart to tell about these flexbox classes</p>
+    <img class="flexbox_img" src="img/flexbox_chart.jpg" alt="">
+    <div class="demobox">
+      <div class="demobox">
+        <div class="flex-l">
+          <p>Item</p> 
+        </div>
+        <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="flex-l">
+  <p>Item</p> 
+</div></xmp></code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="demobox">
+      <div class="demobox">
+        <div class="flex-c">
+          <p>Item</p> 
+        </div>
+        <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="flex-c">
+  <p>Item</p> 
+</div></xmp></code></pre>
+        </div>
+      </div>
+    </div>
+    
+    <div class="demobox">
+      <div class="demobox">
+        <div class="flex-r">
+          <p>Item</p> 
+        </div>
+        <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="flex-r">
+  <p>Item</p> 
+</div></xmp></code></pre>
+        </div>
+      </div>
+    </div>
+    
+    <p>You can combination of those flex classes to get desired results</p>
+  <div class="demobox">
+    <div class="demobox">
+      <div class="flex-c-m">
+        <p>Item</p> 
+      </div>
+      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="flex-c-m">
+  <p>Item</p> 
+</div></xmp></code></pre>
+      </div>
+    </div>
+  </div>
                 </section>
     
                 <section class="main-section" id="Lists">
