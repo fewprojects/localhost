@@ -13,7 +13,7 @@
   }
   nav#navbar a {
     width: 300px;
-    margin:2rem 0rem;
+    margin: 2rem 0rem;
     display: block;
   }
 }
@@ -23,7 +23,6 @@
     padding: 0 1rem;
     position: relative;
     width: 100%;
-    box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
   }
   .header h4,
   .header h4 .menu_button {
@@ -74,6 +73,7 @@
 }
 
 .welcome {
+  margin-top:2rem ;
   height: auto;
 }
 .welcome section h1 {
@@ -108,13 +108,12 @@
   padding: 1rem;
   margin: 1rem auto;
 }
-a i.icons{
-font-weight: bold;
+a i.icons {
+  font-weight: bold;
 }
-.demo-container{
+.demo-container {
   background-color: #ddd;
 }
-.welcome section .icons{
-
+.welcome section .icons {
   margin: 1rem 0;
 }
