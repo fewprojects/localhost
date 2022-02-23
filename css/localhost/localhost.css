@@ -78,6 +78,10 @@ video {
 :root {
   --primary-color: #7938f1;
   --accent-color: #8b51f7;
+  --background-color: #f1f1f1;
+  --heading-color: #121212;
+  --body-text-color: #333;
+  --container-color: #dedede;
 }
 *,
 *:before,
@@ -92,7 +96,8 @@ html {
 body {
   display: block;
   line-height: calc(1.66 + 1vw);
-  color: #555;
+  background-color: var(--background-color);
+  color: var(--body-text-color);
 }
 
 .text-center {
@@ -109,6 +114,7 @@ body {
 b,
 strong {
   font-weight: bolder;
+  color: var(--heading-color);
 }
 i {
   font-style: italic;
@@ -158,22 +164,45 @@ code {
   font-size: inherit;
   color: #ec4949;
 }
-kbd {
+/* kbd {
   font-family: monospace;
   border-radius: 3px;
   font-size: inherit;
-  color: #ddd;
+  color: var(--body-text-color);
   font-weight: bold;
-  background-color: #333;
+  border: 1px solid var(--body-text-color);
+  background-color: var(--background-color);
   font-size: 75%;
   padding: 0.3rem 0.5rem;
-  box-shadow: inset 2px 3px 4px #6e6e6e;
+  box-shadow: inset 2px 3px 2px #6e6e6e;
+} */
+kbd {
+  text-align: center;
+  color: #555;
+  font-size: 80%;
+  border-color: var(--container-color);
+  border-style: solid;
+  cursor: auto;
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+  /* text-shadow: 0 0.5px 1px #777, 0 2px 6px #f2f2f2; */
+  border-width: 1px;
+  background: -webkit-linear-gradient(
+    top,
+    var(--background-color) 0%,
+    var(--background-color) 80%,
+    var(--container-color) 100%
+  );
+  /* font-family: monospace; */
+  /* display: inline-block; */
+  transition: box-shadow 0.3s ease, transform 0.15s ease;
+  /* box-shadow: 0 0 1px #888,0 1px 0 #fff, 0 6px 0 #C0C0C0, 0 8px 17px rgba(#444, 0.4), 2px 1px 4px rgba(#444, 0.25), -2px 1px 4px rgba(#444, 0.25), 0 9px 16px rgba(#444, 0.1); */
 }
 
 samp {
   font-family: monospace;
   font-size: inherit;
-  color: #121212;
+  color: var(--body-text-color);
   padding: 0.3rem 0.5rem;
 }
 
@@ -182,8 +211,11 @@ pre {
   color: #555555;
 }
 hr {
-  border: 1px solid #ddd;
+  border: 1px solid var(--body-text-color);
   margin: 1.5rem 0rem;
+}
+.text-color-primary {
+  color: var(--primary-color);
 }
 h1,
 h2,
@@ -213,7 +245,7 @@ h6 {
   font-size: calc(0.8rem + 0.67vw);
 }
 p {
-  color: #555;
+  color: var(--body-text-color);
 }
 h1,
 h2,
@@ -222,6 +254,7 @@ h4,
 h5,
 h6 {
   margin: 1.5rem 0rem;
+  color: var(--heading-color);
 }
 h1:not(:first-child),
 h2:not(:first-child),
@@ -238,7 +271,7 @@ dl,
 table {
   margin: 0px 0px 1.5rem;
   line-height: 1.66;
-  color: #555;
+  color: var(--body-text-color);
 }
 
 li ul,
@@ -255,22 +288,22 @@ dl dt {
 table {
   margin: 0 auto;
   width: 100%;
-  border: 2px solid #ddd;
+  border: 2px solid var(--body-text-color);
   border-collapse: collapse;
 }
 
 thead tr th,
 tfoot tr th {
   text-align: center;
-  color: #121212;
-  border: 2px solid #ddd;
+  color: var(--heading-color);
+  border: 2px solid var(--body-text-color);
   padding: 1rem;
 }
 
 tbody tr td {
   padding: 1rem;
   text-align: center;
-  border: 1px solid #ddd;
+  border: 2px solid var(--body-text-color);
 }
 
 /*container  */
@@ -307,13 +340,22 @@ form {
 label {
   font-family: inherit;
   font-weight: bold;
-  color: #333;
+  color: var(--heading-color);
   display: block;
 }
+select option {
+  margin: 40px;
+  background: var(--container-color);
+  color: var(--body-text-color);
+}
 label:not(:first-child),
-input:not(:first-child) {
+input:not(:first-child),
+select,
+textarea {
   margin: 1rem 0px;
 }
+select,
+textarea,
 [type="text"],
 [type="password"],
 [type="url"],
@@ -321,31 +363,24 @@ input:not(:first-child) {
 [type="tel"],
 [type="search"],
 [type="number"],
-[type="select"],
-select,
-textarea {
+[type="select"] {
   padding: 0.8rem 1rem;
   font-size: inherit;
   display: block;
-  background-color: none;
+  background-color: transparent;
   outline: none;
   font-family: inherit;
-  color: #121212;
+  color: var(--body-text-color);
   width: 100%;
-  border: 1.5px solid #ddd;
+  border: 1px solid #ddd;
 }
 input:not([type="button"], [type="submit"], [type="reset"]):focus,
 select:focus,
 textarea:focus {
-  outline: 1.5px solid var(--primary-color);
-}
-input:not([type="button"], [type="submit"], [type="reset"]):hover,
-select:hover,
-textarea:hover {
-  border: 1.5px solid #aaa;
+  outline: none;
+  border: 1px solid var(--accent-color);
   transition: 100ms ease-in-out;
 }
-
 /* Buttons */
 
 a.button,
@@ -358,7 +393,6 @@ a.button-round-line,
 button {
   -webkit-appearance: none;
   margin: 1rem 0rem;
-  border: none;
   font-size: 80%;
   text-transform: none;
   cursor: pointer;
@@ -410,6 +444,7 @@ a.button-round-line:hover,
 [type="submit"]:hover,
 [type="reset"]:hover {
   background-color: var(--accent-color);
+  border: 1.5px solid var(--accent-color);
   transition: 100ms ease-in-out;
   color: #f1f1f1;
 }
@@ -421,7 +456,7 @@ fieldset {
 legend {
   padding: 1rem;
   font-family: inherit;
-  color: #333;
+  color: var(--heading-color);
   font-weight: bold;
 }
 /* Font weights */
@@ -475,18 +510,18 @@ blockquote {
   font-family: inherit;
   width: 100%;
   font-style: italic;
-  color: #707070;
+  color: var(--heading-color);
   padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #777;
+  border-left: 8px solid var(--primary-color);
   line-height: 1.6;
   position: relative;
-  background: #ededed;
+  background: var(--background-color);
 }
 
 blockquote::before {
   font-family: Arial;
   content: "\201C";
-  color: #707070;
+  color: var(--primary-color);
   font-size: 4em;
   position: absolute;
   left: 10px;
@@ -499,7 +534,7 @@ blockquote::after {
 
 blockquote cite {
   display: block;
-  color: #707070;
+  color: var(--primary-color);
   font-style: normal;
   font-size: 80%;
   font-weight: bold;

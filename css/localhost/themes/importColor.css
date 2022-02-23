@@ -1,0 +1,13 @@
+:root {
+  /* For Buttons, Inputs and hyperlinks */
+  --primary-color: #1a8f5e !important;
+  --accent-color: #1a7c53 !important;
+
+  /* For Text */
+  --heading-color: #f1f1f1 !important;
+  --body-text-color: #dedede !important;
+
+  /* For body and containers */
+  --background-color: #121212 !important;
+  --container-color: #333 !important;
+}
