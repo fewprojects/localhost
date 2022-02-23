@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap");
 html,
 body,
 div,
@@ -82,6 +83,7 @@ video {
   --heading-color: #121212;
   --body-text-color: #333;
   --container-color: #dedede;
+  --font-family: 'Public Sans', sans-serif;
 }
 *,
 *:before,
@@ -98,6 +100,7 @@ body {
   line-height: calc(1.66 + 1vw);
   background-color: var(--background-color);
   color: var(--body-text-color);
+  font-family: var(--font-family);
 }
 
 .text-center {
@@ -164,21 +167,10 @@ code {
   font-size: inherit;
   color: #ec4949;
 }
-/* kbd {
-  font-family: monospace;
-  border-radius: 3px;
-  font-size: inherit;
-  color: var(--body-text-color);
-  font-weight: bold;
-  border: 1px solid var(--body-text-color);
-  background-color: var(--background-color);
-  font-size: 75%;
-  padding: 0.3rem 0.5rem;
-  box-shadow: inset 2px 3px 2px #6e6e6e;
-} */
+
 kbd {
   text-align: center;
-  color: #555;
+  color: var(--body-text-color);
   font-size: 80%;
   border-color: var(--container-color);
   border-style: solid;
@@ -418,7 +410,7 @@ a.button-round,
 [type="reset"],
 button {
   background-color: var(--primary-color);
-  color: #f1f1f1;
+  color: var(--background-color);
 }
 a.button-line,
 .button-line {
@@ -446,7 +438,7 @@ a.button-round-line:hover,
   background-color: var(--accent-color);
   border: 1.5px solid var(--accent-color);
   transition: 100ms ease-in-out;
-  color: #f1f1f1;
+  color: var(--container-color);
 }
 
 fieldset {

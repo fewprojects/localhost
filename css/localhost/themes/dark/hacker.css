@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+:root {
+  /* For Buttons, Inputs and hyperlinks */
+  --primary-color: #41e241 !important;
+  --accent-color: #24dd24 !important;
+
+  /* For Text */
+  --heading-color: #35f835 !important;
+  --body-text-color: #24dd24 !important;
+
+  /* For body and containers */
+  --background-color: #121212 !important;
+  --container-color: #333 !important;
+
+  /*Font Family */
+  --font-family: "VT323", monospace !important;
+}
