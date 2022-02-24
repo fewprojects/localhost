@@ -43,7 +43,7 @@ npm i localhost.css
 Use localhost css into your ReactJS project like this :
 
 ```javascript
-import "../node_modules/localhost.css/localhost.min.css";
+import "localhost.css";
 ```
 
 2. Use the CDN and paste this following link within `<head></head>` tags
