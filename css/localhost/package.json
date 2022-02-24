@@ -1,6 +1,6 @@
 {
   "name": "localhost.css",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Minimal, Sementic, lightweight CSS boilerplate to make instant layout for your backend localhost projects",
   "main": "localhost.css",
   "scripts": {
