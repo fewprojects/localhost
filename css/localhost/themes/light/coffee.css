@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+:root {
+  /* For Buttons, Inputs and hyperlinks */
+  --primary-color: #967259 !important;
+  --accent-color: #634832 !important;
+
+  /* For Text */
+  --heading-color: #38220f !important;
+  --body-text-color: #373937 !important;
+
+  /* For body and containers */
+  --background-color: #ece0d1 !important;
+  --container-color: #dbc1ac !important;
+
+  /*Font Family */
+  --font-family: "Space Grotesk", sans-serif !important;
+}
