@@ -83,7 +83,7 @@ video {
   --heading-color: #121212;
   --body-text-color: #333;
   --container-color: #dedede;
-  --font-family: 'Public Sans', sans-serif;
+  --font-family: "Public Sans", sans-serif;
 }
 *,
 *:before,
@@ -364,7 +364,7 @@ textarea,
   font-family: inherit;
   color: var(--body-text-color);
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--body-text-color);
 }
 input:not([type="button"], [type="submit"], [type="reset"]):focus,
 select:focus,
