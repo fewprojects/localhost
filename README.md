@@ -24,14 +24,38 @@ Here are few charming benefits to use prefer **localhost css** in your backend p
     - Highly and easily Customizable
     - Based on minimalism
 
-We are continuously evolving it and making it better for
+We are continuously evolving it and making it better for developers like you.
 
 ## Documentation
 
 To read all documentation of **localhost css** , [click here](https://localhost-css.netlify.app/)
 
-## Quick start
+## Quick Installation
 
+You can install localhost css into your system via these following methods
+
+1. Using npm
+
+```git
+npm i localhost.css
+```
+
+Use localhost css into your ReactJS project like this :
+
+```javascript
+import "../node_modules/localhost.css/localhost.min.css";
+```
+
+2. Use the CDN and paste this following link within `<head></head>` tags
+
+```html
+<link
+  rel="stylesheet"
+  href="https://localhost-css.netlify.app/css/localhost/localhost.min.css"
+/>
+```
+
+After adding localhost css into your practice project, you can play with your backend without worrying about frontend styling.
 ...
 
 ## Pre-built themes
