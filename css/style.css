@@ -131,3 +131,7 @@ a i.icons {
   height: auto;
   max-width: 980px;
 }
+
+.themebox p{
+margin: 0rem 1rem;
+}
