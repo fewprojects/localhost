@@ -1,4 +1,4 @@
-@import url("http://fonts.cdnfonts.com/css/minecraftia");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 :root {
   /* For Buttons, Inputs and hyperlinks */
   --primary-color: #292b21 !important;
@@ -13,7 +13,7 @@
   --container-color: #809f20 !important;
 
   /*Font Family */
-  --font-family: "Minecraftia", sans-serif !important;
+  --font-family: "VT323", monospace !important;
 }
 a:not(a.button, a.button-round, a.button-line, a.button-round-line) {
   text-decoration: underline !important;
