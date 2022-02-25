@@ -1,5 +1,7 @@
 # 📟 Localhost UI
 
+![img](https://img.shields.io/badge/Licence-MIT-success) ![forks](https://img.shields.io/github/forks/fewprojects/localhost) ![starts](https://img.shields.io/github/stars/fewprojects/localhost)
+
 A minimal, sementic, customizable lightweight CSS boilerplate to make instant layout for your projects while you are building backend on localhost
 
 ### [View Documentation](https://fewprojects.github.io/localhost/)
