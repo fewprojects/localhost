@@ -8,7 +8,40 @@ function defaultTheme(){
         }
 }
 }
+
 // DARK THEMES
+function darkToggle(){
+  let toggle = document.getElementById("darkToggle");
+  if(toggle.checked == true){
+    function darkDefaultTheme(){
+      let links = document.getElementsByTagName("link");
+        for (let i in links){
+            let link = links[i];
+            let e = link.href.includes("themes");
+            if(e){
+              links[i].href = "css/localhost/themes/dark/default.css"
+              
+            }
+        }
+    }
+    darkDefaultTheme();
+  }
+  else if(toggle.checked == false){
+    function defaultTheme(){
+      let links = document.getElementsByTagName("link");
+      for (let i in links){
+          let link = links[i];
+          let e = link.href.includes("themes");
+          if(e){
+            links[i].href = "themes"
+          }
+  }
+  }
+   defaultTheme();
+  }
+  }
+
+
 
 function darkHacker(){
   let links = document.getElementsByTagName("link");

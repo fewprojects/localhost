@@ -18,7 +18,17 @@
 <body>
     <header class="header flex-sb-m">
         <h5>localhost.css</h5>
-        <button onclick="openNav()" class="menu_button"><i class="fas fa-bars"></i></button> 
+        <div class="flex-sb-m">
+          <div class="dark_button">
+           <small>Dark/Light</small>
+           <label class="switch" for="darkToggle">
+            <input class="darkToggle" type="checkbox"id="darkToggle" onclick="darkToggle()">
+            <span class="slider round"></span>
+          </label>
+        </div>
+          <button onclick="openNav()" class="menu_button"><i class="fas fa-bars"></i></button> 
+        </div>
+        
 </header>
 <div class="welcome container flex-c-m">
     <section class="text-center container-720">
@@ -975,7 +985,12 @@ This world shall know pain!
         </div>
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+$(':checkbox:checked').prop('checked',false);
+});
+</script>
 <script src="js/showThemes.js"></script>
 <script src="js/script.js"></script>
 <script src="js/code/prism.js"></script>
