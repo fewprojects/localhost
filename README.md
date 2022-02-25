@@ -1,8 +1,8 @@
-# 📟 localhost css
+# 📟 localhost UI
 
 A minimal, sementic, customizable lightweight CSS boilerplate to make instant layout for your projects while you are building backend on localhost
 
-## What is localhost css?
+## What is localhost UI?
 
 If you're working with backend language on your localhost, you would not like to write CSS to style default web elements.
 
@@ -12,11 +12,11 @@ You are working on backend and probably you don't want to worry about front end 
 
 This is where **sementic** css frameworks come to help you. That means you won't need to add classes to style elements.
 
-**localhost css** is a **sementic** CSS framework as well, and it is highly **customizable** according to your need.
+**localhost UI** is a **sementic** CSS framework as well, and it is highly **customizable** according to your need.
 
-## Why use localhost css?
+## Why use localhost UI?
 
-Here are few charming benefits to use prefer **localhost css** in your backend project.
+Here are few charming benefits to use prefer **localhost UI** in your backend project.
 
     - Sementic framework
     - Responsive Grid layout based design
@@ -28,34 +28,35 @@ We are continuously evolving it and making it better for developers like you.
 
 ## Documentation
 
-To read all documentation of **localhost css** , [click here](https://localhost-css.netlify.app/)
+To read all documentation of **localhost UI** , [click here](https://localhost-css.netlify.app/)
 
 ## Quick Installation
 
-You can install localhost css into your system via these following methods
+You can install localhost UI into your system via these following methods
 
-1. Using npm
+### Using CDN (Easy)
 
-```git
-npm i localhost.css
-```
-
-Use localhost css into your ReactJS project like this :
-
-```javascript
-import "localhost.css";
-```
-
-2. Use the CDN and paste this following link within `<head></head>` tags
+Paste this following link within `<head></head>` tags
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://localhost-css.netlify.app/css/localhost/localhost.min.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/localhost-ui/localhost.css" />
 ```
 
-After adding localhost css into your practice project, you can play with your backend without worrying about frontend styling.
+### Using npm
+
+Type following code in your terminal
+
+```git
+npm i localhost-ui
+```
+
+Use localhost UI into your ReactJS project like this :
+
+```javascript
+import "localhost";
+```
+
+After adding localhost UI into your practice project, you can play with your backend without worrying about frontend styling.
 
 ## Pre-built themes
 
@@ -84,6 +85,9 @@ Here is how you create new themes for your own projects in just 2 minutes
 There are only 7 style components you have to edit to create a new theme for your project.
 
 Here are those 7 components :
+
+- --primary-color
+- --accent-color
 
 ![img](img/create_new_theme.PNG)
 
