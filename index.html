@@ -78,7 +78,7 @@
                         <a data-scroll href="#Buttons" class="nav-link">Buttons</a>
                         <a data-scroll href="#Form" class="nav-link">Form</a>
                     </div>
-                    <div class="">
+                    <div>
                         <button class="close_button" onclick="closeNav()"><i class="fa fa-times"></i></button>
                     </div>
                 </div>
@@ -121,25 +121,77 @@
 
                 <section class="main-section" id="Customization">
                   <h3>Customization</h3>
-                  <p>Here are some prebuilt themes</p>
+                  <p>
+                    There are 4 dark and 4 light pre-built themes are available excluding one default light/dark localhost theme.</p>
                   <div class="themebox container">
-    
                     <p class="theme-text"><a onclick="defaultTheme()">Default Theme</a></p>
                   <div class="container">
-                    <h6>Dark Themes </h6>
+                    <h6>Dark Themes :</h6>
                     <p class="theme-text"><a onclick="darkHacker()">Hacker</a></p>
                     <p class="theme-text"><a onclick="darkGameboy()">Gameboy</a></p>
-                    <p class="theme-text"><a onclick="darkWriter()">Dark Writer</a></p>
+                    <p class="theme-text"><a onclick="darkWriter()">Writer</a></p>
                     <p class="theme-text"><a onclick="darkGold()">Gold</a></p>
                   </div>  
                   <div class="container">
-                    <h6>Light Themes</h6>
+                    <h6>Light Themes :</h6>
                     <p class="theme-text"><a onclick="lightCoffee()">Coffee</a></p>
-                    <p class="theme-text"><a onclick="lightWriter()">Light Writer</a></p>
+                    <p class="theme-text"><a onclick="lightWriter()">Writer</a></p>
                     <p class="theme-text"><a onclick="lightVintage()">Vintage</a></p>
                     <p class="theme-text"><a onclick="lightOffice()">Office</a></p>
                   </div>    
                   </div>
+                  <div class="container">
+                    <h4>How to use pre-built themes</h4>
+                    <p>To use <b>dark theme / hacker</b>, add following code into <code>&lt;head&gt;&lt;/head&gt;</code> tag of your HTML document</p>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><link rel="stylesheet" href="https://unpkg.com/localhost/themes/dark/hacker.css"/></xmp></code></pre></div>
+
+<p>If your are using npm, import <b>dark theme / hacker</b> like this :</p>
+
+                  <div class="codebox">
+<pre class="lang-javascript"><code><xmp>import 'localhost/themes/dark/hacker.css'</xmp></code></pre></div>
+                    <p>Same goes for other dark and light pre-built themes</p>
+                  </div>
+                  <div class="container">
+                    <h4>Create your own theme</h4>
+                    <p>If you didn't like any of pre-built themes, you can create a new theme with different color palette and typography.</p>
+                    <p>You can do that in less than 2 minutes, let's see how!</p>
+                    <p>Follow these steps to create a new theme for your project</p>
+<div class="container">
+
+                    <ol>
+                      <p><li>Create a new css file <b>YourTheme.css</b> (You can name it anything)</li></p>
+                      <p><li>Copy this following code into your new css file</li></p>
+                      <div class="codebox">
+<pre class="lang-css"><code><xmp>/* Import your favourite font family */
+  @import url(" ");
+  
+  :root {
+    /* For Buttons, Inputs & Hyperlinks */
+    --primary-color: #8b51f7 !important;
+    --accent-color: #7938f1 !important;
+  
+    /* For Headings & Text */
+    --heading-color: #f1f1f1 !important;
+    --body-text-color: #dedede !important;
+  
+    /* For Background and Containers */
+    --background-color: #000000 !important;
+    --container-color: #121212 !important;
+  
+    /*Font Family */
+    --font-family: "Public Sans", sans-serif !important;
+  }</xmp></code></pre>
+                      </div>
+                      <p><li>Replace the default variables with your color palette and font-family (Do not remove <code>!important</code> tag).</li></p>
+                      <p><li>Add this <b>YourTheme.css</b> into <code>&lt;head&gt;&lt;/head&gt;</code> tag of your HTML document.</li></p>
+<pre class="lang-html"><code><xmp><link rel="stylesheet" href="YourTheme.css" /></xmp></code>
+</pre>
+                    </ol>
+                  </div>
+       <p>and voila!</p>
+       <p>You just created a new theme for your project 🎉</p>
+                </div>
                 </section>
               <section class="main-section" id="Layout">
                   <h3>Layout</h3>

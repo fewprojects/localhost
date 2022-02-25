@@ -55,14 +55,14 @@ There are 4 dark and 4 light pre-built themes are available excluding one defaul
 - Gameboy
 - Gold
 - Hacker
-- Dark Writer
+- Writer
 
 ### Light Themes
 
 - Coffee
 - Office
 - Vintage
-- Light Writer
+- Writer
 
 You can customize themes according to you and add new themes as well.
 
@@ -70,30 +70,15 @@ Here is how you create new themes for your own projects in just 2 minutes
 
 ### Creating new theme.
 
-There are only 7 variables you have to edit to create a new theme for your project.
+If you didn't like any of pre-built themes, you can create a new theme with different color palette and typography.
 
-Here are those 7 variables :
+You can do that in less than 2 minutes, let's see how!
 
-For Buttons, Inputs &amp; Hyperlinks
+Follow these steps to create a new theme for your project
 
-- --primary-color
-- --accent-color
+- Create a new css file **YourTheme.css** (You can name it anything)
 
-For Headings and Body text
-
-- --heading-color
-- --body-text-color
-
-For Background and Containers
-
-- --background-color
-- --container-color
-
-For Font family
-
-- --font-family
-
-Copy this following code into a new css file 'YourTheme.css'.
+- Copy this following code into your new css file
 
 ```css
 /* Import your favourite font family */
@@ -117,15 +102,17 @@ Copy this following code into a new css file 'YourTheme.css'.
 }
 ```
 
-Replace the default values with your color palette and font-family (Do not remove '!important' tag).
+- Replace the default variables with your color palette and font-family (Do not remove '!important' tag).
 
-Add this 'YourTheme.css' into <head></head> tag of your HTML document.
+- Add this 'YourTheme.css' into <head></head> tag of your HTML document.
 
 ```html
 <link rel="stylesheet" href="YourTheme.css" />
 ```
 
-Voila! You just made your own new theme.
+and voila!
+
+You just created a new theme for your project 🎉
 
 ## How to contribute
 
