@@ -2,17 +2,7 @@
 
 A minimal, sementic, customizable lightweight CSS boilerplate to make instant layout for your projects while you are building backend on localhost
 
-## What is localhost UI?
-
-If you're working with backend language on your localhost, you would not like to write CSS to style default web elements.
-
-Now either you will install bootstrap or any other UI framework on your localhost project but would you like to add bunch of classes to add stylings?
-
-You are working on backend and probably you don't want to worry about front end design right now.
-
-This is where **sementic** css frameworks come to help you. That means you won't need to add classes to style elements.
-
-**localhost UI** is a **sementic** CSS framework as well, and it is highly **customizable** according to your need.
+### [View Documentation](https://fewprojects.github.io/localhost/)
 
 ## Why use localhost UI?
 
@@ -25,10 +15,6 @@ Here are few charming benefits to use prefer **localhost UI** in your backend pr
     - Based on minimalism
 
 We are continuously evolving it and making it better for developers like you.
-
-## Documentation
-
-To read all documentation of **localhost UI** , [click here](https://localhost-css.netlify.app/)
 
 ## Quick Installation
 
@@ -134,7 +120,7 @@ Replace the default values with your color palette and font-family (Do not remov
 Add this 'YourTheme.css' into <head></head> tag of your HTML document.
 
 ```html
-<link rel="stylesheet" href="YourTheme.css"/>
+<link rel="stylesheet" href="YourTheme.css" />
 ```
 
 Voila! You just made your own new theme.
