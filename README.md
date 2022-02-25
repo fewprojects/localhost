@@ -64,11 +64,26 @@ There are 4 dark and 4 light pre-built themes are available excluding one defaul
 - Vintage
 - Writer
 
-You can customize themes according to you and add new themes as well.
+### How to use pre built themes
 
-Here is how you create new themes for your own projects in just 2 minutes
+For instance, to use **dark theme / hacker**, Copy this following code into <head></head> tag of your HTML document.
 
-### Creating new theme.
+```html
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/localhost-ui/themes/dark/hacker.css"
+/>
+```
+
+If your are using npm, import **dark theme / hacker** like this :
+
+```javascript
+import "localhost-ui/themes/dark/hacker.css";
+```
+
+Same goes for other dark and light pre-built themes
+
+### Creating new theme
 
 If you didn't like any of pre-built themes, you can create a new theme with different color palette and typography.
 
