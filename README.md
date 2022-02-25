@@ -131,4 +131,4 @@ Voila! You just made your own new theme.
 
 ## License
 
-GPL-3.0
+[MIT](https://github.com/fewprojects/localhost/blob/master/LICENSE)
