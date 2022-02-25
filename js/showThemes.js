@@ -46,6 +46,17 @@ function darkGameboy(){
     }
 }
 
+function darkGold(){
+  let links = document.getElementsByTagName("link");
+    for (let i in links){
+        let link = links[i];
+        let e = link.href.includes("themes");
+        if(e){
+          links[i].href = "css/localhost/themes/dark/gold.css"
+          
+        }
+    }
+}
 
 // LIGHT THEMES
 
@@ -68,6 +79,31 @@ function lightWriter(){
         let e = link.href.includes("themes");
         if(e){
           links[i].href = "css/localhost/themes/light/writer.css"
+          
+        }
+    }
+}
+
+
+function lightVintage(){
+  let links = document.getElementsByTagName("link");
+    for (let i in links){
+        let link = links[i];
+        let e = link.href.includes("themes");
+        if(e){
+          links[i].href = "css/localhost/themes/light/vintage.css"
+          
+        }
+    }
+}
+
+function lightOffice(){
+  let links = document.getElementsByTagName("link");
+    for (let i in links){
+        let link = links[i];
+        let e = link.href.includes("themes");
+        if(e){
+          links[i].href = "css/localhost/themes/light/office.css"
           
         }
     }

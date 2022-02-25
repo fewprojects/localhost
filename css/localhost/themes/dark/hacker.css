@@ -15,3 +15,7 @@
   /* Font family  */
   --font-family: "JetBrains Mono", monospace !important;
 }
+
+a:not(a.button, a.button-round, a.button-line, a.button-round-line) {
+  text-decoration: underline !important;
+}

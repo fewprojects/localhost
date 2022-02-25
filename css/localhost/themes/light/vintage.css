@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+:root {
+  /* For Buttons, Inputs and hyperlinks */
+  --primary-color: #740e2a !important;
+  --accent-color: #4f091d !important;
+
+  /* For Text */
+  --heading-color: #121212 !important;
+  --body-text-color: #333333 !important;
+
+  /* For body and containers */
+  --background-color: #97bfb4 !important;
+  --container-color: #e9dac1 !important;
+
+  /*Font Family */
+  --font-family: "Gideon Roman", cursive !important;
+}

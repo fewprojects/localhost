@@ -57,6 +57,7 @@
                     <div class="container navbar_links">
                         <a data-scroll href="#Introduction" class="nav-link">Introduction</a>
                         <a data-scroll href="#Setup" class="nav-link">Setup</a>
+                        <a data-scroll href="#Customization" class="nav-link">Customization</a>
                         <a data-scroll href="#Layout" class="nav-link">Layout </a>
                         <a data-scroll href="#Containers" class="nav-link">Containers</a>
                         <a data-scroll href="#Typography" class="nav-link">Typography</a>
@@ -66,7 +67,6 @@
                         <a data-scroll href="#Table" class="nav-link">Table</a>
                         <a data-scroll href="#Buttons" class="nav-link">Buttons</a>
                         <a data-scroll href="#Form" class="nav-link">Form</a>
-                        <a data-scroll href="#Customization" class="nav-link">Customization</a>
                     </div>
                     <div class="">
                         <button class="close_button" onclick="closeNav()"><i class="fa fa-times"></i></button>
@@ -76,236 +76,258 @@
         </div>
         <div class="col-9">
             <main id="" class="container">
-                <section id="Introduction">
-                    <h3 class="text">Introduction</h3>
-                    <p>If you're working with backend language on your localhost, you would not like to write CSS to style default web elements.
-                    </p>
-                    <p>Now either you will install bootstrap or any other UI framework on your localhost project but would you like to add bunch of classes to add stylings?
-                    </p>
-                    <p>You are working on backend and probably you don't want to worry about front end design right now.</p>
-                    <p>This is where <b>sementic</b> css framework like <b>localhost css</b> helps you. That means you won't need to add classes to style elements.</p>
-                    <p><b>What is sementic styling?</b></p>
-                    <p>For instance, you want to add a button like this :</p>
-                    <button>Button</button>
-                    <p>To generate this pre-sytled button, all you need to write the following default code of HTML</p>
+              <section id="Introduction">
+                  <h3 class="text">Introduction</h3>
+                  <p>If you're working with backend language on your localhost, you would not like to write CSS to style default web elements.
+                  </p>
+                  <p>Now either you will install bootstrap or any other UI framework on your localhost project but would you like to add bunch of classes to add stylings?
+                  </p>
+                  <p>You are working on backend and probably you don't want to worry about front end design right now.</p>
+                  <p>This is where <b>sementic</b> css framework like <b>localhost css</b> helps you. That means you won't need to add classes to style elements.</p>
+                  <p><b>What is sementic styling?</b></p>
+                  <p>For instance, you want to add a button like this :</p>
+                  <button>Button</button>
+                  <p>To generate this pre-sytled button, all you need to write the following default code of HTML</p>
 
 <pre class="lang-html"><code><xmp><button>Button</button></xmp>
 </code></pre>
-                    <p>Despite of being a sementic CSS framework,  <b>localhost css</b> is highly <b>customizable</b> according to your need.</p>
-                    <p>See <a href="#Customization">Customization</a></p> 
-                </section>
-    
-                <section class="main-section" id="Setup">
-                    <h3>Setup</h3>
-                    <p>You can install localhost css into your system via these following methods 
-                    </p>
-                    <p>1. via npm</p>
+                  <p>Despite of being a sementic CSS framework,  <b>localhost css</b> is highly <b>customizable</b> according to your need.</p>
+                  <p>See <a href="#Customization">Customization</a></p> 
+              </section>
+  
+              <section class="main-section" id="Setup">
+                  <h3>Setup</h3>
+                  <p>You can install localhost css into your system via these following methods 
+                  </p>
+                  <p>1. via npm</p>
 <pre class="language-git"><code>npm i localhost.css</code></pre>
-                    <p>to implement this into your javascript project like ReactJS. import the module like this : </p>
+                  <p>to implement this into your javascript project like ReactJS. import the module like this : </p>
 <pre class="language-javascript"><code>import 'localhost.css'</code></pre>
 
-                    <p>2. Use the CDN and paste this following link within <code>&lt;head&gt;&lt;/head&gt;</code> tags</p>
+                  <p>2. Use the CDN and paste this following link within <code>&lt;head&gt;&lt;/head&gt;</code> tags</p>
 <pre class="language-html"><code><xmp><link rel="stylesheet" href="https://localhost-css.netlify.app/css/localhost/localhost.min.css"></xmp></code></pre>
-                    <p>After adding localhost css into your practice project, you can play with your backend without worrying about styling.</p>                    
-                  </section>
+                  <p>After adding localhost css into your practice project, you can play with your backend without worrying about styling.</p>                    
+                </section>
+
+                <section class="main-section" id="Customization">
+                  <h3>Customization</h3>
+                  <p>Here are some prebuilt themes</p>
+                  <div class="themebox container">
     
-                <section class="main-section" id="Layout">
-                    <h3>Layout</h3>
-                    <p>localhost is based on 12-grid sytem layout but you can also use flexbox <a href="#Utilities">Utilities</a> to get desired results.</p>
-                    <p>Most used grid is column 6/6</p>
-                    <p>Here are how to use localhost.css to plan layout for your website</p>
-                    <div class="demobox">
-                      For Column 1/11
-                      <div class="demo">
-                        <div class="row items">
-                          <div class="col-1 item-1">col-1</div>
-                          <div class="col-11 item-2">col-11</div>
-                        </div> 
-                      </div>
-                      <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="row">
-  <div class="col-1">col-1</div>
-  <div class="col-11">col-11</div>
-</div></xmp></code></pre>
-                      </div>
+                    <p class="theme-text"><a onclick="defaultTheme()">Default Theme</a></p>
+                  <div class="container">
+                    <h6>Dark Themes </h6>
+                    <p class="theme-text"><a onclick="darkHacker()">Hacker</a></p>
+                    <p class="theme-text"><a onclick="darkGameboy()">Gameboy</a></p>
+                    <p class="theme-text"><a onclick="darkWriter()">Dark Writer</a></p>
+                    <p class="theme-text"><a onclick="darkGold()">Gold</a></p>
+                  </div>  
+                  <div class="container">
+                    <h6>Light Themes</h6>
+                    <p class="theme-text"><a onclick="lightCoffee()">Coffee</a></p>
+                    <p class="theme-text"><a onclick="lightWriter()">Light Writer</a></p>
+                    <p class="theme-text"><a onclick="lightVintage()">Vintage</a></p>
+                    <p class="theme-text"><a onclick="lightOffice()">Office</a></p>
+                  </div>    
+                  </div>
+                </section>
+              <section class="main-section" id="Layout">
+                  <h3>Layout</h3>
+                  <p>localhost is based on 12-grid sytem layout but you can also use flexbox <a href="#Utilities">Utilities</a> to get desired results.</p>
+                  <p>Most used grid is column 6/6</p>
+                  <p>Here are how to use localhost.css to plan layout for your website</p>
+                  <div class="demobox">
+                    For Column 1/11
+                    <div class="demo">
+                      <div class="row items">
+                        <div class="col-1 item-1">col-1</div>
+                        <div class="col-11 item-2">col-11</div>
+                      </div> 
                     </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-1">col-1</div>
+<div class="col-11">col-11</div>
+</div></xmp></code></pre>
+                    </div>
+                  </div>
 
-                    <div class="demobox">
-                      For Column 2/10
-                      <div class="demo">
-                        <div class="row items">
-                          <div class="col-2 item-1">col-2</div>
-                          <div class="col-10 item-2">col-10</div>
-                        </div> 
-                      </div>
-                      <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="row">
-  <div class="col-2">col-2</div>
-  <div class="col-10">col-10</div>
-</div></xmp></code></pre>
-                      </div>
+                  <div class="demobox">
+                    For Column 2/10
+                    <div class="demo">
+                      <div class="row items">
+                        <div class="col-2 item-1">col-2</div>
+                        <div class="col-10 item-2">col-10</div>
+                      </div> 
                     </div>
-                      
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-2">col-2</div>
+<div class="col-10">col-10</div>
+</div></xmp></code></pre>
+                    </div>
+                  </div>
                     
-                    <div class="demobox">
-                      For Column 3/9
-                      <div class="demo">
-                        <div class="row items">
-                          <div class="col-3 item-1">col-3</div>
-                          <div class="col-9 item-2">col-9</div>
-                        </div> 
-                      </div>
-                      <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="row">
-  <div class="col-3">col-3</div>
-  <div class="col-9">col-9</div>
-</div></xmp></code></pre>
-                      </div>
+                  
+                  <div class="demobox">
+                    For Column 3/9
+                    <div class="demo">
+                      <div class="row items">
+                        <div class="col-3 item-1">col-3</div>
+                        <div class="col-9 item-2">col-9</div>
+                      </div> 
                     </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-3">col-3</div>
+<div class="col-9">col-9</div>
+</div></xmp></code></pre>
+                    </div>
+                  </div>
 
-                    <div class="demobox">
-                      For Column 4/8
-                      <div class="demo">
-                        <div class="row items">
-                          <div class="col-4 item-1">col-4</div>
-                          <div class="col-8 item-2">col-8</div>
-                        </div> 
-                      </div>
-                      <div class="codebox">
+                  <div class="demobox">
+                    For Column 4/8
+                    <div class="demo">
+                      <div class="row items">
+                        <div class="col-4 item-1">col-4</div>
+                        <div class="col-8 item-2">col-8</div>
+                      </div> 
+                    </div>
+                    <div class="codebox">
 <pre class="lang-html"><code><xmp><div class="row">
 <div class="col-4">col-4</div>
 <div class="col-8">col-8</div>
 </div></xmp></code></pre>
-                      </div>
                     </div>
+                  </div>
 
-                    <div class="demobox">
-                      For Column 5/7
-                      <div class="demo">
-                        <div class="row items">
-                          <div class="col-5 item-1">col-5</div>
-                          <div class="col-7 item-2">col-7</div>
-                        </div> 
-                      </div>
-                      <div class="codebox">
+                  <div class="demobox">
+                    For Column 5/7
+                    <div class="demo">
+                      <div class="row items">
+                        <div class="col-5 item-1">col-5</div>
+                        <div class="col-7 item-2">col-7</div>
+                      </div> 
+                    </div>
+                    <div class="codebox">
 <pre class="lang-html"><code><xmp><div class="row">
 <div class="col-5">col-5</div>
 <div class="col-7">col-7</div>
 </div></xmp></code></pre>
-                      </div>
                     </div>
+                  </div>
 
-                    <div class="demobox">
-                      For Column 6/6
-                      <div class="demo">
-                        <div class="row items">
-                          <div class="col-6 item-1">col-6</div>
-                          <div class="col-6 item-2">col-6</div>
-                        </div> 
-                      </div>
-                      <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="row">
-<div class="col-6">col-6</div>
-<div class="col-6">col-6</div>
-</div></xmp></code></pre>
-                      </div>
-                    </div>
-
-                    <div class="demobox">
-                      For Column Full width
-                      <div class="demo">
-                        <div class="row items">
-                          <div class="col-12 item-1">col-12</div>
-                          <div class="col-12 item-1">col-12</div>
-                        </div> 
-                      </div>
-                      <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="row">
-<div class="col-12">col-12</div>
-<div class="col-12">col-12</div>
-</div></xmp></code></pre>
-                      </div>
-                    </div>
-
-                </section>
-    
-                <section class="main-section" id="Containers">
-                    <h3>Containers</h3>
-                    <p>Containers are required to seprate website components. 
-                    </p>
-                    <P>You have to use class .container for div element to make it a container.</P>
-                    <p>Containers in localhost.css are given padding of 1rem which is essential to give white space between components</p>
-                    <p>There are three kinds of containers are available here : default container, container-1280, container-980</p>
-
-
-                    <p><b>Default Container</b></p>
-                    <p>It is flexible container with 100% width. It takes full-width of the parent element</p>
-                        <div class="demo">
-                            <div class="container demo-container">
-                              Default Container
-                            </div>
-                        </div>
-                        <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="container">Default Container</div></xmp></code></pre>
-                        </div>
-                      
-                        <p><b>Container 1280</b></p>
-                    <p>Container 1280 is a continer with max-width of 1280px, that means if screen-size exceeds 1280px, it will maintain fixed width of 1280px.</p>
-                    <p>If screen size is less than 1280px, it will aquire full width of the screen and work like a default container</p>
-                        <div class="demo">
-                            <div class="container-1280 demo-container">
-                              Container 1280
-                            </div>
-                        </div>
-                        <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="container-1280">Container 1280</div></xmp></code></pre>
-                        </div>
-                    
-                        <p><b>Container 980</b></p>
-                    <p>Container 980 is a continer with max-width of 980px, that means if screen-size exceeds 980px, it will maintain fixed width of 980px.</p>
-                    <p>If screen size is less than 980px, it will aquire full width of the screen and work like a default container</p>
-                        <div class="demo">
-                            <div class="container-980 demo-container">
-                              Container 980
-                            </div>
-                        </div>
-                        <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="container-980">Container 980</div></xmp></code></pre>
-                        </div>
-                       
-                        <p><b>Container 720</b></p>
-                    <p>Container 720 is a continer with max-width of 720px, that means if screen-size exceeds 720px, it will maintain fixed width of 720px.</p>
-                    <p>If screen size is less than 720px, it will aquire full width of the screen and work like a default container</p>
-                        <div class="demo">
-                            <div class="container-720 demo-container">
-                              Container 720
-                            </div>
-                        </div>
-                        <div class="codebox">
-<pre class="lang-html"><code><xmp><div class="container-720">Container 720</div></xmp></code></pre>
-                        </div>
-<p>Try minimizing browser's screen using <kbd>CTRL -</kbd>  up to 50% to see containers in action.</p>
-                </section>
-
-                <section class="main-section" id="Typography">
-                  <h3>Typography</h3>
-                  <p>Responsive & fluid typography is used which is fully sementic and class-less.
-                  </p>
-                  <p>You don't have to change <em>font-size</em> or <em>line-height</em> for various screens, so that you can just focus on your learnings</p>
-                  <p>Here are Typography conponents :</p>
-                  <h4>Headings</h4>
                   <div class="demobox">
+                    For Column 6/6
+                    <div class="demo">
+                      <div class="row items">
+                        <div class="col-6 item-1">col-6</div>
+                        <div class="col-6 item-2">col-6</div>
+                      </div> 
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-6">col-6</div>
+<div class="col-6">col-6</div>
+</div></xmp></code></pre>
+                    </div>
+                  </div>
+
+                  <div class="demobox">
+                    For Column Full width
+                    <div class="demo">
+                      <div class="row items">
+                        <div class="col-12 item-1">col-12</div>
+                        <div class="col-12 item-1">col-12</div>
+                      </div> 
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="row">
+<div class="col-12">col-12</div>
+<div class="col-12">col-12</div>
+</div></xmp></code></pre>
+                    </div>
+                  </div>
+
+              </section>
+  
+              <section class="main-section" id="Containers">
+                  <h3>Containers</h3>
+                  <p>Containers are required to seprate website components. 
+                  </p>
+                  <P>You have to use class .container for div element to make it a container.</P>
+                  <p>Containers in localhost.css are given padding of 1rem which is essential to give white space between components</p>
+                  <p>There are three kinds of containers are available here : default container, container-1280, container-980</p>
+
+
+                  <p><b>Default Container</b></p>
+                  <p>It is flexible container with 100% width. It takes full-width of the parent element</p>
                       <div class="demo">
-                          <h1>Heading one h1</h1>
-                          <h2>Heading two h2</h2>
-                          <h3>Heading three h3</h3>
-                          <h4>Heading four h4</h4>
-                          <h5>Heading five h5</h5>
-                          <h6>Heading six h6</h6>
-                          <p>This is a paragraph line</p>
+                          <div class="container demo-container">
+                            Default Container
+                          </div>
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container">Default Container</div></xmp></code></pre>
+                      </div>
+                    
+                      <p><b>Container 1280</b></p>
+                  <p>Container 1280 is a continer with max-width of 1280px, that means if screen-size exceeds 1280px, it will maintain fixed width of 1280px.</p>
+                  <p>If screen size is less than 1280px, it will aquire full width of the screen and work like a default container</p>
+                      <div class="demo">
+                          <div class="container-1280 demo-container">
+                            Container 1280
+                          </div>
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container-1280">Container 1280</div></xmp></code></pre>
+                      </div>
+                  
+                      <p><b>Container 980</b></p>
+                  <p>Container 980 is a continer with max-width of 980px, that means if screen-size exceeds 980px, it will maintain fixed width of 980px.</p>
+                  <p>If screen size is less than 980px, it will aquire full width of the screen and work like a default container</p>
+                      <div class="demo">
+                          <div class="container-980 demo-container">
+                            Container 980
+                          </div>
+                      </div>
+                      <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container-980">Container 980</div></xmp></code></pre>
                       </div>
                       
+                      <p><b>Container 720</b></p>
+                  <p>Container 720 is a continer with max-width of 720px, that means if screen-size exceeds 720px, it will maintain fixed width of 720px.</p>
+                  <p>If screen size is less than 720px, it will aquire full width of the screen and work like a default container</p>
+                      <div class="demo">
+                          <div class="container-720 demo-container">
+                            Container 720
+                          </div>
+                      </div>
                       <div class="codebox">
+<pre class="lang-html"><code><xmp><div class="container-720">Container 720</div></xmp></code></pre>
+                      </div>
+<p>Try minimizing browser's screen using <kbd>CTRL -</kbd>  up to 50% to see containers in action.</p>
+              </section>
+
+            <section class="main-section" id="Typography">
+                <h3>Typography</h3>
+                <p>Responsive & fluid typography is used which is fully sementic and class-less.
+                </p>
+                <p>You don't have to change <em>font-size</em> or <em>line-height</em> for various screens, so that you can just focus on your learnings</p>
+                <p>Here are Typography conponents :</p>
+                <h4>Headings</h4>
+                <div class="demobox">
+                    <div class="demo">
+                        <h1>Heading one h1</h1>
+                        <h2>Heading two h2</h2>
+                        <h3>Heading three h3</h3>
+                        <h4>Heading four h4</h4>
+                        <h5>Heading five h5</h5>
+                        <h6>Heading six h6</h6>
+                        <p>This is a paragraph line</p>
+                    </div>
+                    
+                    <div class="codebox">
 <pre class="lang-html"><code><xmp><h1>Heading one h1</h1>
 <h2>Heading two h2</h2>
 <h3>Heading three h3</h3>
@@ -313,118 +335,118 @@
 <h5>Heading five h5</h5>
 <h6>Heading six h6</h6>
 <p>This is a paragraph line</p></xmp></code></pre>
-                      </div>
-                  </div>
-              </section>
-  
-                <section class="main-section" id="Utilities">
-                    <h3>Utilities</h3>
-                    <p>localhost css has some sementic and class based elements or utilities that will help you to achieve styling without wrting extra css for them </p>
-                      <h6>Text Formatting</h6>
-
-                      <!-- Bold Text -->
-                  <div class="demobox">
-                    <div class="demo">
-                      <p>
-                        This sentence is <b>bold</b>. If you like semantics, you might go with
-                              <strong>strong</strong> or <em>emphasized</em> text. If not, <i>italic</i> is still
-                              around. <small>Small</small> text is for fine print. Your copy can also be
-                              <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, <u>Underline</u>, 
-                              <del>deleted</del>, or <mark>highlighted</mark>. You would use a
-                              <a href="#!">hyperlink</a> to go to a new page.
-                            </p>
                     </div>
-                    <div class="codebox">
+                </div>
+            </section>
+
+            <section class="main-section" id="Utilities">
+                  <h3>Utilities</h3>
+                  <p>localhost css has some sementic and class based elements or utilities that will help you to achieve styling without wrting extra css for them </p>
+                    <h6>Text Formatting</h6>
+
+                    <!-- Bold Text -->
+                <div class="demobox">
+                  <div class="demo">
+                    <p>
+                      This sentence is <b>bold</b>. If you like semantics, you might go with
+                            <strong>strong</strong> or <em>emphasized</em> text. If not, <i>italic</i> is still
+                            around. <small>Small</small> text is for fine print. Your copy can also be
+                            <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, <u>Underline</u>, 
+                            <del>deleted</del>, or <mark>highlighted</mark>. You would use a
+                            <a href="#!">hyperlink</a> to go to a new page.
+                          </p>
+                  </div>
+                  <div class="codebox">
 <pre class="lang-html"><code><xmp><p>
-  This sentence is <b>bold</b>.If you like semantics, 
-  you might go with<strong>strong</strong> or 
-  <em>emphasized</em> text. If not, 
-  <i>italic</i> is still around. 
-  <small>Small</small> text is for fine print. 
-  Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, 
-  <ins>inserted</ins>, <u>Underline</u>, <del>deleted</del>, or 
-  <mark>highlighted</mark>. 
-  You would use a <a href="#!">hyperlink</a> to go to a new page.
+This sentence is <b>bold</b>.If you like semantics, 
+you might go with<strong>strong</strong> or 
+<em>emphasized</em> text. If not, 
+<i>italic</i> is still around. 
+<small>Small</small> text is for fine print. 
+Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, 
+<ins>inserted</ins>, <u>Underline</u>, <del>deleted</del>, or 
+<mark>highlighted</mark>. 
+You would use a <a href="#!">hyperlink</a> to go to a new page.
 </p></xmp></code></pre>
-                    </div>
                   </div>
+                </div>
 
-                  <!-- Code  -->
+                <!-- Code  -->
 
-                  <div class="demobox">
-                    <div class="demo">
-                      <p>
-                        If you like to write about there are plenty of semantic tags for you. There's the generic
-                        <code>code</code>, as well as 
-                        <kbd>Keyboard input</kbd>, <samp>computer output</samp>, and
-                        <var>variables</var>.
-                      </p>
-                    </div>
-                    <div class="codebox">
+                <div class="demobox">
+                  <div class="demo">
+                    <p>
+                      If you like to write about there are plenty of semantic tags for you. There's the generic
+                      <code>code</code>, as well as 
+                      <kbd>Keyboard input</kbd>, <samp>computer output</samp>, and
+                      <var>variables</var>.
+                    </p>
+                  </div>
+                  <div class="codebox">
 <pre class="lang-html"><code><xmp><p>
-  If you like to write about there are plenty of semantic tags for you. 
-  There's the generic <code>code</code>, as well as 
-  <kbd>Keyboard input</kbd>, <samp>computer output</samp>, 
-  and <var>variables</var>.
+If you like to write about there are plenty of semantic tags for you. 
+There's the generic <code>code</code>, as well as 
+<kbd>Keyboard input</kbd>, <samp>computer output</samp>, 
+and <var>variables</var>.
 </p></xmp></code></pre>
-                    </div>
                   </div>
+                </div>
 <!-- Demobox -->
-                  <div class="demobox">
-                    <div class="demo">
-                      <p>
-                        You might have need of a <cite>citation</cite>, <q>short quotation</q>,
-                        <abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
-                      </p>
-                    </div>
-                    <div class="codebox">
+                <div class="demobox">
+                  <div class="demo">
+                    <p>
+                      You might have need of a <cite>citation</cite>, <q>short quotation</q>,
+                      <abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
+                    </p>
+                  </div>
+                  <div class="codebox">
 <pre class="lang-html"><code><xmp><p>
-  You might have need of a <cite>citation</cite>, <q>short quotation</q>,
-  <abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
+You might have need of a <cite>citation</cite>, <q>short quotation</q>,
+<abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
 </p></xmp></code></pre>
-                    </div>
                   </div>
-                        
-                  <!-- Address -->
-                  <p>For address tag : </p>
-                  <div class="demobox">
-                    
-                    <div class="demo">
-                      <address>
-                        <p>
-                          123 Fake Street<br />
-                          Springfield, USA
-                        </p>
-                      </address>
-                    </div>
-                    <div class="codebox">
+                </div>
+                      
+                <!-- Address -->
+                <p>For address tag : </p>
+                <div class="demobox">
+                  
+                  <div class="demo">
+                    <address>
+                      <p>
+                        123 Fake Street<br />
+                        Springfield, USA
+                      </p>
+                    </address>
+                  </div>
+                  <div class="codebox">
 <pre class="lang-html"><code><xmp><address>
-  <p>
-    123 Fake Street<br />
-    Springfield, USA
-  </p>
+<p>
+  123 Fake Street<br />
+  Springfield, USA
+</p>
 </address></xmp></code></pre>
-                    </div>
                   </div>
-                        
-    <h6>Blockquote</h6>
+                </div>
+                      
+  <h6>Blockquote</h6>
 
-    <p>To add quotes you can use blockquote tag like this : </p>
-    <div class="demobox">
-      <div class="demo">
-        <blockquote>
-          This world shall know pain!
-          <cite>- Pain from Naruto Shippuden</cite>
-        </blockquote>
-      </div>
-      <div class="codebox">
-<pre class="lang-html"><code><xmp><blockquote>
-  This world shall know pain!
-  <cite>- Pain from Naruto Shippuden</cite>
-</blockquote></xmp></code></pre>
-      </div>
+  <p>To add quotes you can use blockquote tag like this : </p>
+  <div class="demobox">
+    <div class="demo">
+      <blockquote>
+        This world shall know pain!
+        <cite>- Pain from Naruto Shippuden</cite>
+      </blockquote>
     </div>
-</section>
+    <div class="codebox">
+<pre class="lang-html"><code><xmp><blockquote>
+This world shall know pain!
+<cite>- Pain from Naruto Shippuden</cite>
+</blockquote></xmp></code></pre>
+    </div>
+  </div>
+            </section>
 
 <section class="main-section" id="Flexbox">
     <h3>Flexbox</h3>
@@ -948,29 +970,7 @@
                   </div>
             </section>
 
-            <section class="main-section" id="Customization">
-              <h3>Customization</h3>
-              <p>Here are some prebuilt themes</p>
-              <div class="themebox container">
-
-                <p class="theme-text"><a onclick="defaultTheme()">Default Theme</a></p>
-              <div class="container">
-                <h6>Dark Themes </h6>
-                <p class="theme-text"><a onclick="darkHacker()">Hacker</a></p>
-                <p class="theme-text"><a onclick="darkGameboy()">Gameboy</a></p>
-                <p class="theme-text"><a onclick="darkWriter()">Dark Writer</a></p>
-              </div>  
-              <div class="container">
-                <h6>Light Themes</h6>
-                <p class="theme-text"><a onclick="lightCoffee()">Coffee</a></p>
-                <p class="theme-text"><a onclick="lightWriter()">Light Writer</a></p>
-              </div>  
-                
-               
-                
-                
-              </div>
-            </section>
+            
             </main>
         </div>
     </div>

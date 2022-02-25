@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 :root {
   /* For Buttons, Inputs and hyperlinks */
-  --primary-color: #37392e !important;
-  --accent-color: #292b21 !important;
+  --primary-color: #292b21 !important;
+  --accent-color: #3d3f34 !important;
 
   /* For Text */
   --heading-color: #37392e !important;
@@ -14,4 +14,7 @@
 
   /*Font Family */
   --font-family: "VT323", monospace !important;
+}
+a:not(a.button, a.button-round, a.button-line, a.button-round-line) {
+  text-decoration: underline !important;
 }

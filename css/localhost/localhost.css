@@ -443,7 +443,7 @@ a.button-round-line:hover,
 }
 
 fieldset {
-  border: 2px solid #ddd;
+  border: 2px solid var(--body-text-color);
   padding: 2rem;
 }
 legend {
