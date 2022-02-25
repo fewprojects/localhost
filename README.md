@@ -82,14 +82,63 @@ Here is how you create new themes for your own projects in just 2 minutes
 
 ### Creating new theme.
 
-There are only 7 style components you have to edit to create a new theme for your project.
+There are only 7 variables you have to edit to create a new theme for your project.
 
-Here are those 7 components :
+Here are those 7 variables :
+
+For Buttons, Inputs &amp; Hyperlinks
 
 - --primary-color
 - --accent-color
 
+For Headings and Body text
+
+- --heading-color
+- --body-text-color
+
+For Background and Containers
+
+- --background-color
+- --container-color
+
+For Font family
+
+- --font-family
+
+Copy this following code into a new css file 'YourTheme.css'.
+
+```css
+@import url(" ");
+
+:root {
+  /* For Buttons, Inputs & Hyperlinks */
+  --primary-color: #8b51f7 !important;
+  --accent-color: #7938f1 !important;
+
+  /* For Headings & Text */
+  --heading-color: #f1f1f1 !important;
+  --body-text-color: #dedede !important;
+
+  /* For Background and Containers */
+  --background-color: #000000 !important;
+  --container-color: #121212 !important;
+
+  /*Font Family */
+  --font-family: "Public Sans", sans-serif !important;
+}
+```
+
 ![img](img/create_new_theme.PNG)
+
+Replace the default values with your color palette and font-family (Do not remove '!important' tag)
+
+Add 'YourTheme.css' into <head></head> tag of your HTML document.
+
+```html
+<link rel="stylesheet" href="YourTheme.css" />
+```
+
+Voila!
 
 ## How to contribute
 
