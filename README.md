@@ -108,6 +108,7 @@ For Font family
 Copy this following code into a new css file 'YourTheme.css'.
 
 ```css
+/* Import your favourite font family */
 @import url(" ");
 
 :root {
@@ -128,17 +129,15 @@ Copy this following code into a new css file 'YourTheme.css'.
 }
 ```
 
-![img](img/create_new_theme.PNG)
+Replace the default values with your color palette and font-family (Do not remove '!important' tag).
 
-Replace the default values with your color palette and font-family (Do not remove '!important' tag)
-
-Add 'YourTheme.css' into <head></head> tag of your HTML document.
+Add this 'YourTheme.css' into <head></head> tag of your HTML document.
 
 ```html
-<link rel="stylesheet" href="YourTheme.css" />
+<link rel="stylesheet" href="YourTheme.css"/>
 ```
 
-Voila!
+Voila! You just made your own new theme.
 
 ## How to contribute
 
