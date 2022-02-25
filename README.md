@@ -1,4 +1,4 @@
-# 📟 localhost UI
+# 📟 Localhost UI
 
 A minimal, sementic, customizable lightweight CSS boilerplate to make instant layout for your projects while you are building backend on localhost
 
@@ -8,11 +8,11 @@ A minimal, sementic, customizable lightweight CSS boilerplate to make instant la
 
 Here are few charming benefits to use prefer **localhost UI** in your backend project.
 
-    - Sementic framework
-    - Responsive Grid layout based design
-    - Fluid Typography
-    - Highly and easily Customizable
-    - Based on minimalism
+- Sementic framework
+- Responsive Grid layout based design
+- Fluid Typography
+- Highly and easily Customizable
+- Based on minimalism
 
 We are continuously evolving it and making it better for developers like you.
 
