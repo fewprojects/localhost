@@ -43,7 +43,7 @@ npm i localhost.css
 Use localhost css into your ReactJS project like this :
 
 ```javascript
-import 'localhost.css'
+import "localhost.css";
 ```
 
 2. Use the CDN and paste this following link within `<head></head>` tags
@@ -56,11 +56,36 @@ import 'localhost.css'
 ```
 
 After adding localhost css into your practice project, you can play with your backend without worrying about frontend styling.
-...
 
 ## Pre-built themes
 
-...
+There are 4 dark and 4 light pre-built themes are available excluding one default light/dark localhost theme.
+
+### Dark themes
+
+- Gameboy
+- Gold
+- Hacker
+- Dark Writer
+
+### Light Themes
+
+- Coffee
+- Office
+- Vintage
+- Light Writer
+
+You can customize themes according to you and add new themes as well.
+
+Here is how you create new themes for your own projects in just 2 minutes
+
+### Creating new theme.
+
+There are only 7 style components you have to edit to create a new theme for your project.
+
+Here are those 7 components :
+
+[img](img/create_new_theme.PNG)
 
 ## How to contribute
 
