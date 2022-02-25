@@ -85,7 +85,7 @@ There are only 7 style components you have to edit to create a new theme for you
 
 Here are those 7 components :
 
-[img](img/create_new_theme.PNG)
+![img](img/create_new_theme.PNG)
 
 ## How to contribute
 
