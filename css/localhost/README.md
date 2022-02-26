@@ -27,7 +27,7 @@ You can install localhost UI into your system via these following methods
 Paste this following link within `<head></head>` tags
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/localhost-ui/localhost.css" />
+<link rel="stylesheet" href="https://unpkg.com/localhost-ui/localhost.min.css" />
 ```
 
 ### Using npm
@@ -41,7 +41,7 @@ npm i localhost-ui
 Use localhost UI into your ReactJS project like this :
 
 ```javascript
-import "localhost";
+import "localhost-ui";
 ```
 
 After adding localhost UI into your practice project, you can play with your backend without worrying about frontend styling.
