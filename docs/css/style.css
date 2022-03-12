@@ -74,7 +74,8 @@
 }
 
 .welcome section .logo .localhost_svg {
-  width: 100px;
+  margin-top: 1rem;
+  width: 70px;
   max-width: 100%;
   max-height: 100%;
 }
@@ -86,11 +87,11 @@
   height: 100%;
 }
 
-.welcome section .container .icons a b i {
+ .icons a b i {
   color: #2081ff;
   margin-right:2rem 
 }
-.welcome section .container .icons a b i:hover {
+ .icons a b i:hover {
   color: #0d69e0;
 }
 .demobox {
