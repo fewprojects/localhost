@@ -29,7 +29,7 @@ Paste this following link within `<head></head>` tags
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/localhost-ui/localhost.min.css"
+  href="https://unpkg.com/localhost-ui/dist/index.css"
 />
 ```
 
