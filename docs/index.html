@@ -445,7 +445,7 @@ You would use a <a href="#!">hyperlink</a> to go to a new page.
 <pre class="lang-html"><code><xmp><p>
 If you like to write about there are plenty of semantic tags for you. 
 There's the generic <code>code</code>, as well as 
-<kbd>Keyboard input</kbd>, <samp>computer output</samp>, 
+<kbd>Keyboard</kbd>, <samp>computer output</samp>, 
 and <var>variables</var>.
 </p></xmp></code></pre>
                   </div>
@@ -1042,12 +1042,11 @@ $(':checkbox:checked').prop('checked',false);
 <!-- <script src="js/showThemes.js"></script> -->
 <script src="js/script.js"></script>
 <script src="js/code/prism.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="https://unpkg.com/browse/smooth-scroll/dist/smooth-scroll.min.js"></script>
 <script>
-	var scroll = new SmoothScroll('a[href*="#"]', {
-
-      speed :100
-  });
+var scroll = new SmoothScroll('a[href*="#"]',{
+  speed:300
+});
 </script>
 </body>
 </html>
