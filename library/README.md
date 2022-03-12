@@ -27,7 +27,10 @@ You can install localhost UI into your system via these following methods
 Paste this following link within `<head></head>` tags
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/localhost-ui/localhost.min.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/localhost-ui/localhost.min.css"
+/>
 ```
 
 ### Using npm
@@ -131,7 +134,22 @@ You just created a new theme for your project 🎉
 
 ## How to contribute
 
-...
+Here is how you can contribute to localhost UI
+
+- You can modify and correct documentation
+- Add new themes to the library
+
+### Here is how to add new themes
+
+Follow this prcedure to contribute by adding new themes to localhost UI.
+
+- Fork this repository to your github.
+
+- Clone this repository to your local system.
+
+- Create new **theme.css** file by follwoing [this method](###How to ) into css/localhost/themes/dark/ or css/localhost/theme/light/
+
+- Copy this following code into 
 
 ## License
 

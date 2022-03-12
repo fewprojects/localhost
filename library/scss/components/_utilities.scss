@@ -1,0 +1,157 @@
+.text-dark{
+  color: $dark;
+}
+.text-light{
+  color: $light;
+}
+.text-gray{
+  color: $gray;
+}
+.text-info{
+  color: $info;
+}
+.text-success{
+  color: $success;
+}
+.text-error{
+  color: $error;
+}
+.text-warning{
+  color: $warning;
+}
+.text-display{
+  background: -webkit-linear-gradient( #ff4ba5,#9d41e7);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.text-justify{
+  text-align: justify;
+}
+
+// background
+
+.bg-dark{
+  background-color: $dark;
+}
+.bg-light{
+  background-color: $light;
+}
+.bg-info{
+  background-color:hsl(214, 100%, 84%);
+}
+.bg-success{
+background-color:hsl(100, 100%, 84%);
+}
+.bg-error{
+background-color:hsl(0, 100%, 84%);
+}
+.bg-warning{
+background-color:hsl(48, 100%, 84%);
+}
+
+/* Font weights */
+.fw-normal {
+  font-weight: normal;
+}
+.fw-bold {
+  font-weight: bold;
+}
+.fw-bolder {
+  font-weight: bolder;
+}
+.fw-lighter {
+  font-weight: lighter;
+}
+.fw-100 {
+  font-weight: 100;
+}
+.fw-200 {
+  font-weight: 200;
+}
+.fw-300 {
+  font-weight: 300;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900 {
+  font-weight: 900;
+}
+.fw-1000 {
+  font-weight: 1000;
+}
+
+// Width & height
+
+.width-100vw{
+  width: 100vw;
+}
+.Width-full{
+  width:100%;
+}
+.width-auto{
+  width: auto;
+}
+.width-720{
+width:$small;
+}
+.width-980{
+width:$medium;
+}
+.width-1280{
+width:$large;
+}
+.height-100vh{
+  height: 100vh;
+}
+.height-full{
+  height:100%;
+}
+.height-auto{
+  height: auto;
+}
+
+// 
+.border-dark{
+border:2px solid $dark;
+}
+.border-light{
+border: 2px solid $light;
+}
+.border-gray{
+border: 2px solid $gray;
+}
+.border-info{
+border: 1.5px solid $info;
+}
+.border-error{
+border: 1.5px solid $error;
+}
+.border-success{
+border: 1.5px solid $success
+}
+.border-warning{
+border: 1.5px solid $warning;
+}

@@ -1,0 +1,29 @@
+/*container  */
+.container {
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.container-720 {
+    @extend .container;
+  max-width: 720px;
+  
+}
+.container-980 {
+  @extend .container;
+  max-width: 980px;
+ 
+}
+.container-1280 {
+    @extend .container;
+  max-width: 1280px;
+}
+
+.container-alert{
+padding: 0.3rem;
+width: 100%;
+border-radius: 7px;
+margin: 0 auto;
+justify-content: center;
+}

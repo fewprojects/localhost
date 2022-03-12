@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color:$heading-color;
+  margin: 1.5rem 0rem;
+}
+h1 {
+  font-size: calc(2.25rem + 2vw);
+  line-height: calc(2rem + 2.25vw);
+}
+h2 {
+  font-size: calc(1.875rem + 1.875vw);
+}
+h3 {
+  font-size: calc(1.5rem + 1.5vw);
+}
+h4 {
+  font-size: calc(1.25rem + 1.25vw);
+}
+h5 {
+  font-size: calc(1.125rem + 1.125vw);
+}
+h6 {
+  font-size: calc(0.8rem + 0.67vw);
+}
+p {
+  color: $body-text-color;
+  margin: 0.875rem 0;
+}
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+  margin: 1.5rem 0px;
+}

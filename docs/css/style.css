@@ -25,11 +25,11 @@
   }
   .header h4,
   .header h4 .menu_button {
-    color: var(--heading-color);
+    color: #121212;
   }
   nav#navbar {
     position: absolute;
-    background-color: var(--background-color);
+    background-color: #ffffff;
     height: auto;
     display: flex;
     justify-content: center;
@@ -60,7 +60,7 @@
   .menu_button,
   .close_button {
     background-color: transparent;
-    color: var(--heading-color);
+    color: #121212;
     margin: 0;
     padding: 1rem;
     border: none !important;
@@ -68,7 +68,7 @@
   .menu_button:hover,
   .close_button:hover {
     background-color: transparent;
-    color: var(--body-text-color);
+    color: #333333;
   }
 }
 
@@ -78,42 +78,40 @@
   max-height: 100%;
 }
 .welcome section .logo .localhost_svg .tower {
-  fill: var(--heading-color);
+  fill: #121212;
 }
 .welcome {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   height: 100%;
 }
-.welcome section .container h1 {
-  color: var(--heading-color);
-}
+
 .welcome section .container .icons a b i {
+  color: #2081ff;
   margin: 0rem 1rem;
-  color: var(--primary-color);
 }
 .welcome section .container .icons a b i:hover {
-  color: var(--accent-color);
+  color: #0d69e0;
 }
 .demobox {
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 4px;
   margin: 1.5rem 0;
-  background-color: var(--container-color);
+  background-color: #e5e5e5;
 }
 .items {
-  background-color: var(--container-color);
+  background-color: #e5e5e5;
   padding: 1rem;
-  color: var(--body-text-color);
+  color: #333333;
 }
 .item-1 {
-  /* background-color: var(--background-color); */
-  border: 1px solid var(--accent-color);
+  /* background-color: #ffffff; */
+  border: 1px solid #0d69e0;
   padding: 1rem;
   margin: 1rem auto;
 }
 .item-2 {
-  /* background-color: var(--background-color); */
-  border: 1px solid var(--accent-color);
+  /* background-color: #ffffff; */
+  border: 1px solid #0d69e0;
   padding: 1rem;
   margin: 1rem auto;
 }
@@ -121,8 +119,8 @@ a i.icons {
   font-weight: bold;
 }
 .demo-container {
-  background-color: var(--container-color);
-  color: var(--body-text-color);
+  background-color: #e5e5e5;
+  color: #333333;
 }
 .welcome section .icons {
   margin: 1rem 0;
@@ -175,16 +173,16 @@ a i.icons {
   width:18px;
   left: 4px;
   bottom: 4px;
-  background-color: var(--background-color);
+  background-color: #ffffff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 input:checked + .slider {
-  background-color: var(--primary-color);
+  background-color: #2081ff;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--primary-color);
+  box-shadow: 0 0 1px #2081ff;
 }
 
 input:checked + .slider:before {

@@ -1,0 +1,54 @@
+// Buttons
+
+a.button,
+a.button-line,
+a.button-round,
+a.button-round-line,
+[type="button"],
+[type="submit"],
+[type="reset"],
+button {
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  font-size: 80%;
+  text-decoration: none;
+  text-transform: none;
+  cursor: pointer;
+  border:$form-focus-border;
+  text-decoration: none;
+  font-family: inherit;
+  outline: none;
+  display: inline;
+  font-weight: 600;
+  padding: 0.8rem 2.4rem;
+  &:hover{
+      background-color: $accent-color;
+      border: 1px solid $accent-color;
+      text-decoration: none;
+      transition: 100ms ease-in-out;
+      color: $background;
+    }
+}
+
+a.button,
+a.button-round,
+[type="button"],
+[type="submit"],
+[type="reset"],
+button {
+  background-color: $primary-color;
+  color: $background;
+}
+a.button-line,
+.button-line, a.button-round-line,
+.button-round-line  {
+  background-color: transparent;
+  color: $primary-color;
+}
+a.button-round,
+.button-round, a.button-round-line,
+.button-round-line {
+  border-radius: 1000vh;
+}

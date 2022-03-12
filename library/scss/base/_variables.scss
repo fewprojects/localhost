@@ -1,0 +1,29 @@
+$primary-color: #2081ff;
+$accent-color:#0d69e0;
+$background:#ffffff;
+$container-color:#e5e5e5;
+$heading-color:#121212;
+$body-text-color:#333333;
+$highlight:#f3d35e;
+$dark:#121212;
+$light:#f1f1f1;
+$gray:#aaaaaa;
+$error:#e43535;
+$info:#0d69e0;
+// $success  :#339900;
+$success  :#5cbb00;
+$warning:#dfb200;
+
+// Fonts
+$font-family: 'Inter', sans-serif;
+
+// widths
+
+$small: 720px;
+$medium:980px;
+$large:1280px;
+
+// Border
+$table-border:2px solid $body-text-color;
+$form-default-border:1px solid $body-text-color;
+$form-focus-border:1px solid $primary-color;
