@@ -1,0 +1,31 @@
+@mixin flex-direction($dir) {
+    -webkit-flex-direction: $dir;
+    -moz-flex-direction:$dir;
+    -ms-flex-direction:$dir;
+    -o-flex-direction:$dir;
+    flex-direction: $dir;
+}
+
+@mixin display-flex () {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin placeItem($hr, $vr) {
+    justify-content: $hr;
+    align-items: $vr;
+    -ms-align-items: $vr;
+}
+@mixin align-item ($value){
+  -ms-align-items: $value;
+  align-items: $value;
+}
+@mixin desktopReset {
+    margin-left: auto;
+    left: auto;
+    float: left;
+    right: auto;
+}

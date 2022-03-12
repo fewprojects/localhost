@@ -18,38 +18,33 @@
     <header class="header flex-sb-m">
         <h5>localhost</h5>
         <div class="flex-sb-m">
-          <div class="dark_button">
-           <small>Light/Dark</small>
-           <label class="switch" for="darkToggle">
-            <input class="darkToggle" type="checkbox"id="darkToggle" onclick="darkToggle()">
-            <span class="slider round"></span>
-          </label>
-        </div>
+          
           <button onclick="openNav()" class="menu_button" id="openNav"><i class="fas fa-bars"></i></button> 
         </div>
         
 </header>
-<div class="welcome container flex-c-m">
-    <section class="text-center container-720">
-      <div class="logo container">
-        <svg viewBox="0 0 832 511" fill="none" xmlns="http://www.w3.org/2000/svg" class="localhost_svg">
-          <path class="tower" d="M112 18.5886C112 8.3224 120.283 0 130.5 0V0C140.717 0 149 8.3224 149 18.5886V248.411C149 258.678 140.717 267 130.5 267V267C120.283 267 112 258.678 112 248.411V18.5886Z" fill="black"/>
-          <path class="tower" fill-rule="evenodd" clip-rule="evenodd" d="M130.5 0C120.283 0 112 8.3224 112 18.5886V248.411C112 258.678 120.283 267 130.5 267C140.717 267 149 258.678 149 248.411V18.5886C149 8.3224 140.717 0 130.5 0Z" fill="black"/>
-          <path  class="tower" d="M152 372.5C152 385.479 141.255 396 128 396C114.745 396 104 385.479 104 372.5C104 359.521 114.745 349 128 349C141.255 349 152 359.521 152 372.5Z" fill="black"/>
-          <path  class="tower" d="M223 372.5C223 385.479 212.479 396 199.5 396C186.521 396 176 385.479 176 372.5C176 359.521 186.521 349 199.5 349C212.479 349 223 359.521 223 372.5Z" fill="black"/>
-          <path  class="tower" d="M294 372.5C294 385.479 283.479 396 270.5 396C257.521 396 247 385.479 247 372.5C247 359.521 257.521 349 270.5 349C283.479 349 294 359.521 294 372.5Z" fill="black"/>
-          <path  class="tower" fill-rule="evenodd" clip-rule="evenodd" d="M798.179 269.951H33.8211V477.049H798.179V269.951ZM33.8211 236C15.1422 236 0 251.2 0 269.951V477.049C0 495.8 15.1423 511 33.8212 511H798.179C816.858 511 832 495.8 832 477.049V269.951C832 251.2 816.858 236 798.179 236H33.8211Z" fill="black"/>
-          </svg>
-      </div>
+<div class="welcome flex-c-m">
+    <section class="container col-10">
+      
       <div class="container">
-        <h1>localhost UI</h1>
-        <p>A minimal, sementic, <b>customizable</b> lightweight CSS boilerplate to make instant layout for your projects while you are building backend on localhost</p>
-        <div class="buttons row container">
-            <a data-scroll href="#Introduction" class="button">Get started</a>
-           
+        <div class="logo">
+          <svg viewBox="0 0 832 511" fill="none" xmlns="http://www.w3.org/2000/svg" class="localhost_svg">
+            <path class="tower" d="M112 18.5886C112 8.3224 120.283 0 130.5 0V0C140.717 0 149 8.3224 149 18.5886V248.411C149 258.678 140.717 267 130.5 267V267C120.283 267 112 258.678 112 248.411V18.5886Z" fill="black"/>
+            <path class="tower" fill-rule="evenodd" clip-rule="evenodd" d="M130.5 0C120.283 0 112 8.3224 112 18.5886V248.411C112 258.678 120.283 267 130.5 267C140.717 267 149 258.678 149 248.411V18.5886C149 8.3224 140.717 0 130.5 0Z" fill="black"/>
+            <path  class="tower" d="M152 372.5C152 385.479 141.255 396 128 396C114.745 396 104 385.479 104 372.5C104 359.521 114.745 349 128 349C141.255 349 152 359.521 152 372.5Z" fill="black"/>
+            <path  class="tower" d="M223 372.5C223 385.479 212.479 396 199.5 396C186.521 396 176 385.479 176 372.5C176 359.521 186.521 349 199.5 349C212.479 349 223 359.521 223 372.5Z" fill="black"/>
+            <path  class="tower" d="M294 372.5C294 385.479 283.479 396 270.5 396C257.521 396 247 385.479 247 372.5C247 359.521 257.521 349 270.5 349C283.479 349 294 359.521 294 372.5Z" fill="black"/>
+            <path  class="tower" fill-rule="evenodd" clip-rule="evenodd" d="M798.179 269.951H33.8211V477.049H798.179V269.951ZM33.8211 236C15.1422 236 0 251.2 0 269.951V477.049C0 495.8 15.1423 511 33.8212 511H798.179C816.858 511 832 495.8 832 477.049V269.951C832 251.2 816.858 236 798.179 236H33.8211Z" fill="black"/>
+            </svg>
         </div>
-        <br>
-        <div class="icons">
+        <h6 class="text-gray">localhost UI</h6>
+        <!-- <p class="alert text-info bg-info">npm v~@2.0.1</p> -->
+        <h1>A minimal, <span class="text-display">sementic</span>, lightweight css boilerplate</h1>
+        <p>Make instant layout for your projects while you are building backend on localhost</p>
+        <div class="space-vr">
+          <a data-scroll href="#Introduction" class="button">Get started</a>
+        </div>
+        <div class="icons space-vr">
             <a href="https://github.com/fewprojects/localhostcss" target="_blank"><b><i class="fab fa-github"></i></b></a>
             <a href="https://twitter.com/fewprojects" target="_blank"><b><i class="fab fa-twitter"></i></b></a>
             <a href="https://www.npmjs.com/package/localhost-ui" target="_blank"><b><i class="fab fa-npm"></i></b></a>
@@ -100,7 +95,6 @@
 <pre class="lang-html"><code><xmp><button>Button</button></xmp>
 </code></pre>
                   <p>Despite of being a sementic CSS framework,  <b>localhost UI</b> is highly <b>customizable</b> according to your need.</p>
-                  <p>See <a href="#Customization">Customization</a></p> 
               </section>
   
               <section class="main-section" id="Setup">
@@ -1031,8 +1025,6 @@ This world shall know pain!
                     </div>
                   </div>
             </section>
-
-            
             </main>
         </div>
     </div>
