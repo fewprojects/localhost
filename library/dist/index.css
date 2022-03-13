@@ -438,18 +438,20 @@ code {
   font-size: inherit; }
 
 kbd {
+  color: #aaa;
+  font: bold 9pt arial;
+  text-decoration: none;
+  padding: 0.5rem 0.7rem;
   text-align: center;
-  width: auto;
-  color: #333333;
-  font-size: 80%;
-  border-color: #e5e5e5;
-  border-style: solid;
-  cursor: auto;
-  border-radius: 5px;
-  padding: 0.3rem 1rem;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 5px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  transition: box-shadow 0.3s ease, transform 0.15s ease; }
+  margin: 5px;
+  background: #222;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border-top: 1px solid #222;
+  -webkit-box-shadow: inset 0 0 25px #333, 0 1px 0 #000, 0 2px 0 #222, 0 2px 3px #333;
+  -moz-box-shadow: inset 0 0 25px #333, 0 1px 0 #000, 0 2px 0 #222, 0 2px 3px #333;
+  box-shadow: inset 0 0 25px #333, 0 1px 0 #000, 0 2px 0 #222, 0 2px 3px #333;
+  text-shadow: 0px -1px 0px #000; }
 
 samp {
   font-family: monospace;
