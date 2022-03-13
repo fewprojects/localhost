@@ -51,13 +51,6 @@ After adding localhost UI into your practice project, you can play with your bac
 
 ## How to contribute
 
-Here is how you can contribute to localhost UI
-
-- You can modify and correct documentation
-- Add new themes to the library
-
-### Here is how to add new themes
-
 Follow this prcedure to contribute by adding new themes to localhost UI.
 
 - Fork this repository to your github.
@@ -77,3 +70,7 @@ Follow this prcedure to contribute by adding new themes to localhost UI.
 ## License
 
 [MIT](https://github.com/fewprojects/localhost/blob/master/LICENSE)
+
+## Author
+
+[Ankit Upadhyay](https://theankitnet.com)

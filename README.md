@@ -70,3 +70,7 @@ Follow this prcedure to contribute by adding new themes to localhost UI.
 ## License
 
 [MIT](https://github.com/fewprojects/localhost/blob/master/LICENSE)
+
+## Author
+
+[Ankit Upadhyay](https://theankitnet.com)
