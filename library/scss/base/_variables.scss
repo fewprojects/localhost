@@ -10,9 +10,15 @@ $light:#f1f1f1;
 $gray:#aaaaaa;
 $error:#e43535;
 $info:#0d69e0;
-// $success  :#339900;
 $success  :#5cbb00;
 $warning:#dfb200;
+
+// Light Background Color
+
+$bg-info-light:hsl(215, 100%, 91%);
+$bg-error-light:hsl(0, 100%, 91%);
+$bg-warning-light:hsl(48, 100%, 89%);
+$bg-success-light:hsl(99, 100%, 89%);
 
 // Fonts
 $font-family: 'Inter', sans-serif;

@@ -209,7 +209,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
 div.code-toolbar > .toolbar > .toolbar-item > a,
 div.code-toolbar > .toolbar > .toolbar-item > button,
 div.code-toolbar > .toolbar > .toolbar-item > span {
-  color: #bbb;
+  color: #aaa;
   font-size: 0.6em;
   padding: 0 0.5em;
   background: #f5f2f0;
@@ -223,6 +223,6 @@ div.code-toolbar > .toolbar > .toolbar-item > button:focus,
 div.code-toolbar > .toolbar > .toolbar-item > button:hover,
 div.code-toolbar > .toolbar > .toolbar-item > span:focus,
 div.code-toolbar > .toolbar > .toolbar-item > span:hover {
-  color: inherit;
+  color: #eee;
   text-decoration: none;
 }

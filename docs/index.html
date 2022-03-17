@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>localhost UI | Boilerplate for developers</title>
-    <link rel="stylesheet" href="https://unpkg.com/localhost-ui/dist/index.css">
-    <!-- <link rel="stylesheet" href="../library/dist/index.css"> -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/localhost-ui/dist/index.css"> -->
+    <link rel="stylesheet" href="../library/dist/index.css">
     <link rel="stylesheet" href="css/code/prism.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -402,95 +402,113 @@
             <section class="main-section" id="Utilities">
                   <h3><span class="text-info">#</span> Utilities</h3>
                   <p>localhost UI has some sementic and class based elements or utilities that will help you to achieve styling without wrting extra css for them </p>
-                    <h6>Text Formatting</h6>
+                   
+                  <h5>Alert</h5>
+                  <div class="demobox">
+                    <div class="demo">
+                      <p class="alert-info">This is info alert!</p>
+                      <p class="alert-error">This is error alert!</p>
+                      <p class="alert-success">This is success alert!</p>
+                      <p class="alert-warning">This is warning alert!</p>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><p class="alert-info">This is info alert!</p>
+<p class="alert-error">This is error alert!</p>
+<p class="alert-success">This is success alert!</p>
+<p class="alert-warning">This is warning alert!</p>
 
-                    <!-- Bold Text -->
-                <div class="demobox">
-                  <div class="demo">
-                    <p>
-                      This sentence is <b>bold</b>. If you like semantics, you might go with
-                            <strong>strong</strong> or <em>emphasized</em> text. If not, <i>italic</i> is still
-                            around. <small>Small</small> text is for fine print. Your copy can also be
-                            <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, <u>Underline</u>, 
-                            <del>deleted</del>, or <mark>highlighted</mark>. You would use a
-                            <a href="#!">hyperlink</a> to go to a new page.
-                          </p>
+</xmp></code></pre>
+                    </div>
                   </div>
-                  <div class="codebox">
-<pre class="lang-html"><code><xmp><p>
-This sentence is <b>bold</b>.If you like semantics, 
-you might go with<strong>strong</strong> or 
-<em>emphasized</em> text. If not, 
-<i>italic</i> is still around. 
-<small>Small</small> text is for fine print. 
-Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, 
-<ins>inserted</ins>, <u>Underline</u>, <del>deleted</del>, or 
-<mark>highlighted</mark>. 
-You would use a <a href="#!">hyperlink</a> to go to a new page.
-</p></xmp></code></pre>
-                  </div>
-                </div>
 
-                <!-- Code  -->
 
-                <div class="demobox">
-                  <div class="demo">
-                    <p>
-                      If you like to write about there are plenty of semantic tags for you. There's the generic
-                      <code>code</code>, as well as 
-                      <kbd>Keyboard</kbd>, <samp>computer output</samp>, and
-                      <var>variables</var>.
-                    </p>
+                  <h5>Text Colors</h5>
+                  <div class="demobox">
+                    <div class="demo">
+                      <p class="text-info">This is info text</p>
+                      <p class="text-error">This is error text</p>
+                      <p class="text-success">This is success text</p>
+                      <p class="text-warning">This is warning text</p>
+                      <p class="text-gray">This is gray text</p>
+                      <p class="text-dark">This is dark text</p>
+                      <p class="text-light">This is light text</p>
+                      <p class="text-display">This is display text</p>
+                    </div>
+                    <div class="codebox">
+<pre class="lang-html"><code><xmp><p class="text-info">This is info text</p>
+<p class="text-error">This is error text</p>
+<p class="text-success">This is success text</p>
+<p class="text-warning">This is warning text</p>
+<p class="text-gray">This is gray text</p>
+<p class="text-dark">This is dark text</p>
+<p class="text-light">This is light text</p>
+<p class="text-display">This is display text</p>
+</xmp></code></pre>
+                    </div>
                   </div>
-                  <div class="codebox">
-<pre class="lang-html"><code><xmp><p>
-If you like to write about there are plenty of semantic tags for you. 
-There's the generic <code>code</code>, as well as 
-<kbd>Keyboard</kbd>, <samp>computer output</samp>, 
-and <var>variables</var>.
-</p></xmp></code></pre>
-                  </div>
-                </div>
-<!-- Demobox -->
-                <div class="demobox">
-                  <div class="demo">
-                    <p>
-                      You might have need of a <cite>citation</cite>, <q>short quotation</q>,
-                      <abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
-                    </p>
-                  </div>
-                  <div class="codebox">
-<pre class="lang-html"><code><xmp><p>
-You might have need of a <cite>citation</cite>, <q>short quotation</q>,
-<abbr>abbreviation</abbr>, or <dfn>definition</dfn>. It might be <time>10:00pm</time>.
-</p></xmp></code></pre>
-                  </div>
-                </div>
-                      
-                <!-- Address -->
-                <p>For address tag : </p>
-                <div class="demobox">
                   
+                  
+                <h5>Text Formatting</h5>
+                <div class="demobox">
                   <div class="demo">
-                    <address>
-                      <p>
-                        123 Fake Street<br />
-                        Springfield, USA
-                      </p>
-                    </address>
+                    <p>This is a <b>bold</b> text </p>
+                    <p>This is a <strong>strong</strong> text </p>
+                    <p>This is an <u>Underlined</u> text </p>
+                    <p>This is a <a href="#!">hyperlink</a> text </p>
+                    <p>This is an <i>italic</i> text</p>
+                    <p>This is a <mark>highlighted</mark> text</p>
+                    <p>This is a <small>small</small> text</p>
+                    <p>This is a <sup>superscripted</sup> text</p>
+                    <p>This is a <sub>subscripted</sub> text</p>
+                    <p>This is a <ins>inserted</ins> text</p>
+                    <p>This is a <del>deleted</del> text</p>
                   </div>
                   <div class="codebox">
-<pre class="lang-html"><code><xmp><address>
-<p>
-  123 Fake Street<br />
-  Springfield, USA
-</p>
-</address></xmp></code></pre>
+<pre class="lang-html"><code><xmp><p>This is a <b>bold</b> text </p>
+<p>This is a <strong>strong</strong> text </p>
+<p>This is an <u>Underlined</u> text </p>
+<p>This is a <a href="#!">hyperlink</a> text </p>
+<p>This is an <i>italic</i> text</p>
+<p>This is a <mark>highlighted</mark> text</p>
+<p>This is a <small>small</small> text</p>
+<p>This is a <sup>superscripted</sup> text</p>
+<p>This is a <sub>subscripted</sub> text</p>
+<p>This is a <ins>inserted</ins> text</p>
+<p>This is a <del>deleted</del> text</p></xmp></code></pre>
                   </div>
                 </div>
-                      
-  <h6>Blockquote</h6>
 
+
+                <div class="demobox">
+                  <div class="demo">
+                    <p>This is <code>code</code> text</p>
+                    <p>This is a <kbd>Keyboard</kbd> key</p>
+                    <p>This is a <samp>computer output</samp></p>
+                    <p>This is a <var>variable</var></p>
+                    <p>This is a <cite>citation</cite></p>
+                    <p>This is a <q>short quotation</q></p>
+                    <p>This is an <abbr>abbreviation</abbr></p>
+                    <p>This is a <dfn>definition</dfn></p>
+                    <p>Time is now <time>10:00pm</time></p>
+                    <p>Address is : <address>123 Fake Street<br/>Springfield, USA</address></p>
+                  </div>
+                  <div class="codebox">
+<pre class="lang-html"><code><xmp><p>This is <code>code</code> text</p>
+<p>This is a <kbd>Keyboard</kbd> key</p>
+<p>This is a <samp>computer output</samp></p>
+<p>This is a <var>variable</var></p>
+<p>This is a <cite>citation</cite></p>
+<p>This is a <q>short quotation</q></p>
+<p>This is an <abbr>abbreviation</abbr></p>
+<p>This is a <dfn>definition</dfn></p>
+<p>Time is now <time>10:00pm</time></p>
+<p>Address is : <address>123 Fake Street<br/>Springfield, USA</address></p>
+</xmp></code></pre>
+                  </div>
+                </div>
+
+                      
+  <h5>Blockquote</h5>
   <p>To add quotes you can use blockquote tag like this : </p>
   <div class="demobox">
     <div class="demo">
@@ -506,6 +524,38 @@ This world shall know pain!
 </blockquote></xmp></code></pre>
     </div>
   </div>
+
+
+<!-- FOnt Weight -->
+
+<!-- <h5>Font Weight</h5>
+  <div class="demobox">
+    <div class="demo">
+      <p>This is <code>code</code> text</p>
+      <p>This is a <kbd>Keyboard</kbd> key</p>
+      <p>This is a <samp>computer output</samp></p>
+      <p>This is a <var>variable</var></p>
+      <p>This is a <cite>citation</cite></p>
+      <p>This is a <q>short quotation</q></p>
+      <p>This is an <abbr>abbreviation</abbr></p>
+      <p>This is a <dfn>definition</dfn></p>
+      <p>Time is now <time>10:00pm</time></p>
+      <p>Address is : <address>123 Fake Street<br/>Springfield, USA</address></p>
+    </div>
+    <div class="codebox">
+<pre class="lang-html"><code><xmp><p>This is <code>code</code> text</p>
+<p>This is a <kbd>Keyboard</kbd> key</p>
+<p>This is a <samp>computer output</samp></p>
+<p>This is a <var>variable</var></p>
+<p>This is a <cite>citation</cite></p>
+<p>This is a <q>short quotation</q></p>
+<p>This is an <abbr>abbreviation</abbr></p>
+<p>This is a <dfn>definition</dfn></p>
+<p>Time is now <time>10:00pm</time></p>
+<p>Address is : <address>123 Fake Street<br/>Springfield, USA</address></p>
+</xmp></code></pre>
+    </div>
+  </div> -->
             </section>
 
 <section class="main-section" id="Flexbox">
@@ -809,13 +859,13 @@ This world shall know pain!
 
                   <div class="demobox">
                   <div class="demobox">
-                  <a href="" class="button">Button 1</a>
+                  <a href="#!" class="button">Button 1</a>
                     <hr>
-                    <a href="" class="button-line">Button 2</a>
+                    <a href="#!" class="button-line">Button 2</a>
                     <hr>
-                    <a href="" class="button-round">Button 3</a>
+                    <a href="#!" class="button-round">Button 3</a>
                     <hr>
-                    <a href="" class="button-round-line">Button 4</a>
+                    <a href="#!" class="button-round-line">Button 4</a>
                   </div>
               
                   <div>

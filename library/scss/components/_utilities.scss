@@ -46,35 +46,25 @@
 .space-vr{
   margin:2rem 0rem ;
 }
-.alert{
-  padding: 0.5rem;
-  font-size: 90%;
-  width: 66.66%;
-  margin:0 auto;
-  font-weight: bold;
-  border-radius:4px ;
-}
-// background
 
-.bg-dark{
-  background-color: $dark;
-}
-.bg-light{
-  background-color: $light;
-}
-.bg-info{
-  background-color:hsl(215, 100%, 91%);
-}
-.bg-success{
-background-color:hsl(99, 100%, 89%);
-}
-.bg-error{
-background-color:hsl(0, 100%, 91%);
-}
-.bg-warning{
-background-color:hsl(48, 100%, 89%); 
+
+.alert-info {
+@include AlertType($info, $bg-info-light);
 }
 
+.alert-error {
+@include AlertType($error, $bg-error-light);
+}
+
+.alert-warning {
+@include AlertType($warning, $bg-warning-light);
+}
+
+.alert-success {
+@include AlertType($success, $bg-success-light);
+}
+  
+ 
 /* Font weights */
 .fw-normal {
   font-weight: normal;

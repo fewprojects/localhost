@@ -557,6 +557,20 @@ button {
     text-decoration: none;
     transition: 100ms ease-in-out;
     color: #ffffff; }
+  a.button:focus,
+  a.button-line:focus,
+  a.button-round:focus,
+  a.button-round-line:focus,
+  [type="button"]:focus,
+  [type="submit"]:focus,
+  [type="reset"]:focus,
+  button:focus {
+    background-color: #0d69e0;
+    border: 1px solid #0d69e0;
+    text-decoration: none;
+    outline: none;
+    transition: 100ms ease-in-out;
+    color: #ffffff; }
 
 a.button,
 a.button-round,
@@ -1244,31 +1258,41 @@ h6:not(:first-child) {
 .space-vr {
   margin: 2rem 0rem; }
 
-.alert {
+.alert-info {
   padding: 0.5rem;
-  font-size: 90%;
+  font-size: 80%;
   width: 66.66%;
-  margin: 0 auto;
   font-weight: bold;
-  border-radius: 4px; }
-
-.bg-dark {
-  background-color: #121212; }
-
-.bg-light {
-  background-color: #f1f1f1; }
-
-.bg-info {
+  border-radius: 4px;
+  color: #0d69e0;
   background-color: #d1e4ff; }
 
-.bg-success {
-  background-color: #dbffc7; }
-
-.bg-error {
+.alert-error {
+  padding: 0.5rem;
+  font-size: 80%;
+  width: 66.66%;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #e43535;
   background-color: #ffd1d1; }
 
-.bg-warning {
+.alert-warning {
+  padding: 0.5rem;
+  font-size: 80%;
+  width: 66.66%;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #dfb200;
   background-color: #fff4c7; }
+
+.alert-success {
+  padding: 0.5rem;
+  font-size: 80%;
+  width: 66.66%;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #5cbb00;
+  background-color: #dbffc7; }
 
 /* Font weights */
 .fw-normal {

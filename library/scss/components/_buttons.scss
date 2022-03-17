@@ -30,6 +30,14 @@ button {
       transition: 100ms ease-in-out;
       color: $background;
     }
+  &:focus{
+    background-color: $accent-color;
+    border: 1px solid $accent-color;
+    text-decoration: none;
+    outline: none;
+    transition: 100ms ease-in-out;
+    color: $background;
+  }  
 }
 
 a.button,
