@@ -66,18 +66,6 @@
   
  
 /* Font weights */
-.fw-normal {
-  font-weight: normal;
-}
-.fw-bold {
-  font-weight: bold;
-}
-.fw-bolder {
-  font-weight: bolder;
-}
-.fw-lighter {
-  font-weight: lighter;
-}
 .fw-100 {
   font-weight: 100;
 }
@@ -105,59 +93,4 @@
 .fw-900 {
   font-weight: 900;
 }
-.fw-1000 {
-  font-weight: 1000;
-}
 
-// Width & height
-
-.width-100vw{
-  width: 100vw;
-}
-.Width-full{
-  width:100%;
-}
-.width-auto{
-  width: auto;
-}
-.width-720{
-width:$small;
-}
-.width-980{
-width:$medium;
-}
-.width-1280{
-width:$large;
-}
-.height-100vh{
-  height: 100vh;
-}
-.height-full{
-  height:100%;
-}
-.height-auto{
-  height: auto;
-}
-
-// 
-.border-dark{
-border:2px solid $dark;
-}
-.border-light{
-border: 2px solid $light;
-}
-.border-gray{
-border: 2px solid $gray;
-}
-.border-info{
-border: 1.5px solid $info;
-}
-.border-error{
-border: 1.5px solid $error;
-}
-.border-success{
-border: 1.5px solid $success
-}
-.border-warning{
-border: 1.5px solid $warning;
-}
